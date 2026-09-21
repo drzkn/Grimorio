@@ -1,1 +1,2 @@
 # Grimorio
+Repositorio de skills
