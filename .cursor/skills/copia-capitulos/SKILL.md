@@ -24,7 +24,8 @@ Buscar página Notion por nombre → detectar BD hija "capítulos" → volcar ca
    d. Ruta destino: `<raíz>/<tipo>/<nombre>/capítulos/<nombre_archivo>.md`
 9. **Crear carpeta** `<tipo>/<nombre>/capítulos/` si no existe (`mkdir -p`)
 10. **Para cada archivo**: comprobar si existe → advertir sobreescritura si aplica, luego escribir
-11. **Confirmar** con lista de todos los archivos creados/sobreescritos y sus rutas
+11. **Relink / aviso wikilinks** — ver nota abajo
+12. **Confirmar** con lista de todos los archivos creados/sobreescritos y sus rutas
 
 ## Nombre de archivo
 
@@ -55,3 +56,8 @@ Ejemplo completo:
 - El contenido del fetch ya viene en Markdown — volcar tal cual, sin transformar
 - Si la página no tiene BD hija "capítulos", informar al usuario (sugerir usar `copia-pagina` en su lugar)
 - El tipo/carpeta se deriva de metadatos Notion, no del contenido del texto
+- **Wikilinks:** ver [wikilinks.md](../wikilinks.md). Notion no lleva `[[wikilinks]]`. Un volcado pisa `capítulos/N.md` y borra pie `## Relacionado` + primeras menciones enlazadas. **No escribir Notion** para reponerlos.
+  1. Antes de sobreescribir: si el `.md` local ya tenía `## Relacionado`, anotarlo.
+  2. Tras volcar: listar los caps que **tenían** pie y lo han perdido.
+  3. Encadenar skill `contexto-capitulo` para relink de esos caps (y de los nuevos sin pie).
+  4. Si el usuario **no** quiere relink: avisar de que el grafo Obsidian queda roto hasta que corra `contexto-capitulo`.

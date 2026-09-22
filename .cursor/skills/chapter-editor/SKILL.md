@@ -17,6 +17,7 @@ Analizar un capítulo concreto de un relato de fantasía como editor profesional
    - Primero buscar un fichero dedicado al capítulo en la carpeta del relato: `capitulo_1.md`, `cap1.md`, `capitulo_uno.md`, etc.
    - Si no existe fichero dedicado, leer `contenido.md` (o `contenido.txt`) y extraer la sección correspondiente al capítulo buscado (buscar por encabezado `# Capítulo X`, `## Capítulo X`, título del capítulo, etc.).
    - Si no se encuentra el capítulo, indicarlo al usuario y listar los capítulos disponibles.
+   - **Pie `## Relacionado`:** no es capítulo. Cortar en el `---` que lo abre. No analizarlo, no contarlo en extensión, no evaluarlo como cierre. Ver [wikilinks.md](../wikilinks.md).
 5. **Leer contexto** (obligatorio para hilos y coherencia):
    - `contexto.md` si existe.
    - Si existe `contexto_global/`: leer el merge (`resumen.md`, `contexto_historia.md`, `tono_narrador.md`, `personajes/`) **y todas** las notas `contexto_global/capitulos/*.md`, no solo la del capítulo analizado. Merge = estado acumulado. Notas de otros caps = hilos abiertos/pagados y hechos ya establecidos. La nota de este cap evita re-descubrirlo; el análisis editorial sigue exigiendo el **texto fuente** de este capítulo.
@@ -42,6 +43,8 @@ Citar fragmentos exactos del capítulo y anotar. Formato:
 > "[fragmento citado...]"
 ⚠️ RITMO: La frase se alarga sin ganancia de tensión. Partir en dos.
 ```
+
+**Citas limpias:** al citar con `>`, quitar markup wikilink. `[[ahumi|Ahumi]]` → `Ahumi`. Un `>` con `[[ ]]` dentro = error de skill. Ver [wikilinks.md](../wikilinks.md).
 
 Prefijos de anotación:
 
@@ -147,7 +150,7 @@ N. 🎯8 🔴/🟡 [ÁREA] — [qué cambiar, en una frase imperativa]
 `🎯8` = este ítem, aplicado, cierra el hueco hacia ≥8/10. Puede ir con 🔴 o con 🟡. Sin `🎯8` = queda en el informe; `capitulo-revisado` no lo toca.
 
 Reglas:
-- **Sin fragmento, no hay entrada.** Cada cambio debe citar el texto afectado con comillas exactas del capítulo.
+- **Sin fragmento, no hay entrada.** Cada cambio debe citar el texto afectado con comillas exactas del capítulo (**sin** `[[wikilinks]]`; ver citas limpias arriba).
 - Si el cambio afecta a una zona amplia (varios párrafos), citar el inicio y el final: `"[inicio...]...[...final]"`.
 - La instrucción `→` debe ser accionable en menos de 30 segundos: decir exactamente qué hacer, no solo qué está mal. Si hay dos opciones de autor, escribirlas y dejar la elección en «Para 8/10».
 - Si dos problemas afectan al mismo fragmento, agruparlos en una sola entrada con varias instrucciones `→`.
@@ -169,6 +172,7 @@ Una vez generado el veredicto, guardar el análisis completo (Parte 1 + Parte 2 
 
 ```
 # Análisis editorial: [nombre del relato] — Capítulo [X]
+**Fuente:** [[capítulos/X|Capítulo X]] · [[contexto_global/capitulos/X|Nota cap X]]
 **Nota:** [X] / 10
 ---
 ```
@@ -194,6 +198,7 @@ Reglas comunes a la corrección local y en Notion:
 - Corregir errores de ortografía (tildes, mayúsculas, palabras mal escritas).
 - Corregir errores gramaticales (concordancia, puntuación incorrecta, uso erróneo de verbos).
 - **No tocar**: estilo, voz narrativa, estructura de frases, elecciones léxicas del autor, contenido narrativo.
+- **Wikilinks (solo corrección local):** nunca tocar el interior de `[[target|…]]`. El target es nombre de fichero; una tilde ahí rompe el enlace. Si el error está en la etiqueta (`[[ahumi|Aumi]]`), corregir solo la etiqueta. Ver [wikilinks.md](../wikilinks.md).
 - Si una frase es torpe pero gramaticalmente correcta, **no modificarla** — eso es territorio del análisis, no de la corrección.
 - Al finalizar, indicar al usuario cuántas correcciones se aplicaron y de qué tipo (ej: "3 tildes, 1 coma, 1 mayúscula") y citar cuáles han sido.
 
@@ -220,3 +225,5 @@ Usar `notion-update-page` con `command: "update_content"` y un array de `content
 Una entrada por cada corrección — no agrupar múltiples errores en un solo `old_str` salvo que estén en la misma frase continua.
 
 Si el fetch de Notion difiere ligeramente del fichero local (formato, espacios), usar el texto del fetch como referencia para `old_str`, no el del fichero local.
+
+El fetch de Notion **no** tiene wikilinks. `old_str` = texto del fetch. **Nunca** subir `[[ ]]` a páginas de `Capítulos`. Ver [wikilinks.md](../wikilinks.md).

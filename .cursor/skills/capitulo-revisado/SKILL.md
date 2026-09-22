@@ -22,7 +22,7 @@ Fuente = bloque `### Para 8/10` de `analisis_cap{N}.md` (ítems `🎯8`). El res
    - Hay `### Para 8/10` → usar esos números.
    - No hay (análisis viejo) → tomar de la lista accionable todo `🎯8`; si tampoco hay marca, tomar 🟡 + 🔴 de ritmo/personaje/mundo/hilos/magia/cierre. **No** tomar 🔴 de prosa/grama salvo que rompa inmersión. Avisar: «análisis sin 🎯8; inferí la barra».
    - Cero ítems → parar. «Nada para 8/10. No hay redline.»
-4. **Leer el capítulo fuente** (mismo criterio que `chapter-editor`). Base = texto **actual**, post-corrección ortográfica si ya corrió.
+4. **Leer el capítulo fuente** (mismo criterio que `chapter-editor`). Base = texto **actual**, post-corrección ortográfica si ya corrió, **sin** el pie `## Relacionado`. El redline no reproduce ese pie. Ver [wikilinks.md](../wikilinks.md).
 5. **Aplicar cada ítem 🎯8** sobre una copia. Orden: de abajo a arriba. Completado: cada ítem en `aplicados` u `omitidos`. Tras aplicar, el texto propuesto debe poder puntuar **≥8/10** (ritmo, gente, lore de este cap, cierre). Si un omitido impide la barra, decirlo.
 6. **Guardar** `relatos/<relato>/revision_cap{N}.md` (sobreescribir). Formato: «Fichero local».
 7. **Espejar** con `guarda-analisis`, tipo `Capítulo revisado — Cap {N}`. Padre = fila `Análisis — Cap {N}` en `Revisiones`. Un toggle heading. No escribir en `Capítulos`. No tocar `Edición`.
@@ -32,7 +32,7 @@ Fuente = bloque `### Para 8/10` de `analisis_cap{N}.md` (ítems `🎯8`). El res
 
 De cada ítem `🎯8`:
 
-- `>` = ancla. Buscar el fragmento **exacto**. Cita amplia (`"[inicio...]...[...final]"`) = ese tramo entero.
+- `>` = ancla. Buscar el fragmento contra el texto **sin** markup wikilink (`[[ahumi|Ahumi]]` casa con `Ahumi`). El fragmento real del fuente puede llevar `[[ ]]` alrededor del nombre. Cita amplia (`"[inicio...]...[...final]"`) = ese tramo entero. Ver [wikilinks.md](../wikilinks.md).
 - `→` = operación. Si trae texto nuevo, usar **ese**. Si describe el cambio, reescribir el ancla en la voz del autor: recortar, condensar, decidir lore — no un capítulo distinto.
 - Varios `>` en el mismo ítem = todas las anclas.
 - `Elecciones`: usar la opción del análisis. Si falta, elegir la que encaje con `contexto_global/` y anotarla.
@@ -65,10 +65,13 @@ Patrones:
 
 Alta y baja **contiguas**. Pintar solo el delta, no el párrafo entero si cambió una palabra.
 
+**Wikilinks:** se copian tal cual y **no** se pintan. Si una alta reescribe un tramo que tenía enlace y el personaje sigue nombrado, el enlace va dentro de la alta: `<span color="red">[[ahumi|Ahumi]] calló</span>`.
+
 ## Fichero local
 
 ```
 # Capítulo revisado: [nombre del relato] — Capítulo [N]
+**Fuente:** [[capítulos/N|Capítulo N]] · [[contexto_global/capitulos/N|Nota cap N]]
 **Barra:** ≥8/10 cubierta | no cubierta — [omitido que lo impide]
 **🎯8:** [aplicados] / [total]
 **Omitidos:** [lista corta, o «ninguno»]
@@ -79,7 +82,7 @@ Alta y baja **contiguas**. Pintar solo el delta, no el párrafo entero si cambi�
 [capítulo entero, ya marcado]
 ```
 
-El cuerpo tras el segundo `---` es el capítulo. Conservar párrafos, diálogos y saltos del fuente. Solo cambia el markup de los deltas.
+El cuerpo tras el segundo `---` es el capítulo (sin pie `## Relacionado`). Conservar párrafos, diálogos y saltos del fuente. Solo cambia el markup de los deltas.
 
 ## Notion
 

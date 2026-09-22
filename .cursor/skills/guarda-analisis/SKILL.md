@@ -135,6 +135,7 @@ Conversión desde el `.md` local:
 - Headings internos (`##`, `###`) se quedan, ya indentados: viven *dentro* del toggle.
 - Espejo: no reescribir el análisis al subirlo.
 - Spans de color (`<span color="red">`, `<span color="gray">`) y tachado (`~~…~~`) se copian tal cual. Los trae `capitulo-revisado`.
+- **Wikilinks** (`[[ahumi|Ahumi]]`, `[[capítulos/N|…]]`): se copian **literales**. No convertir a texto, no borrar, no crear menciones Notion. Ver [wikilinks.md](../wikilinks.md).
 
 ## No hacer
 
@@ -142,6 +143,7 @@ Conversión desde el `.md` local:
 - Página hija del relato titulada solo `Análisis`.
 - Mencionar análisis en la raíz del relato como hermano de Capitulos / Revisiones / Roadmap.
 - Meter análisis o el capítulo revisado en `Capitulos` (rompe `copia-capitulos`).
+- Escribir `[[wikilinks]]` en páginas de `Capítulos` ni en la raíz del relato.
 - Crear la BD `Revisiones` si falta, o una BD nueva si ya existe.
 - `replace_content` de un padre que ya tiene toggles.
 - Duplicar una clave en el mismo padre.

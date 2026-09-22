@@ -39,6 +39,10 @@ Del capítulo, extraer **una sola escena** que cumpla al menos dos:
 
 Si hay varias candidatas, elegir la más cercana al clímax del capítulo. No componer escenas de acción rápida; preferir momentos de quietud dramática o contemplación.
 
+**Pie `## Relacionado`:** no es escena candidata. Ignorarlo al leer el `.md`. Ver [wikilinks.md](../wikilinks.md).
+
+Nombres en el prompt: inglés, **sin** markup. Leer la etiqueta (`Ahumi`), no el target (`ahumi`).
+
 ## Plantilla de prompt
 
 Ensamblar en inglés. Sustituir `[...]`. Va a `description` de `GenerateImage`, no al chat.

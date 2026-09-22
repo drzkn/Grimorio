@@ -29,6 +29,7 @@ Si el hilo está en modo caveman (`/caveman`, lite/full/ultra u otra compresión
    - Si no: `capitulo_N.md`, `capN.md`, etc.
    - Si no: extraer la sección de `contenido.md` / `contenido.txt`.
    - Si no aparece: listar capítulos disponibles y parar.
+   - **Pie `## Relacionado`:** no se lee. Aparato de autor; un lector no lo ve. No cuenta para «¿paso página?». Ver [wikilinks.md](../wikilinks.md).
 6. **Memoria de lector** (solo lo que ya habría leído):
    - Caps anteriores: texto o, si existe y está al día, `contexto_global/capitulos/<n>.md` para 1..N-1.
    - **No** leer `contexto.md`, merge de mundo, ni `analisis*.md`.
@@ -54,12 +55,13 @@ Sí: "aquí me perdí", "aquí me enganché", "no me creí a esta persona", "que
 
 Si sale "ritmo", "arco", "infodump", "punto de vista", "gancho de cierre" → reescribir como lo vivido.
 
-Citar solo cuando la sensación cuelga de una línea concreta. Informe corto: cabe en una o dos pantallas. El capítulo vive dentro del libro: si algo solo funciona porque el lector ya viene de antes, decirlo; si un recién llegado a *este* cap se perdería, también.
+Citar solo cuando la sensación cuelga de una línea concreta. **Citas limpias:** sin `[[wikilinks]]` — `[[ahumi|Ahumi]]` → `Ahumi`. Ver [wikilinks.md](../wikilinks.md). Informe corto: cabe en una o dos pantallas. El capítulo vive dentro del libro: si algo solo funciona porque el lector ya viene de antes, decirlo; si un recién llegado a *este* cap se perdería, también.
 
 ## Informe
 
 ```markdown
 # Lectura: [nombre del relato] — Capítulo [N]
+**Fuente:** [[capítulos/N|Capítulo N]] · [[contexto_global/capitulos/N|Nota cap N]]
 **Modo:** beta | aficionado
 **¿Paso página?** sí al momento / sí pero flojo / lo dejé
 **Nota:** X/10

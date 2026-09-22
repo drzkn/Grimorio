@@ -17,7 +17,7 @@ Buscar página Notion por nombre → volcar contenido como `.md` en el proyecto.
 6. **Calcular ruta destino** — `<raíz>/<tipo>/<nombre>/contenido.md`
 7. **Crear carpeta** si no existe (usando shell `mkdir -p <tipo>/<nombre>`)
 8. **Comprobar si existe** el archivo en esa ruta
-   - Si existe → advertir al usuario e indicar que se sobreescribirá, luego proceder
+   - Si existe → advertir al usuario e indicar que se sobreescribirá (**motivo:** si el destino es un `.md` del vault con `[[wikilinks]]`, el volcado los pisa y rompe el grafo Obsidian; ver [wikilinks.md](../wikilinks.md)), luego proceder
    - Si no existe → crear directamente
 9. **Escribir el archivo** con el contenido completo obtenido del fetch
 10. **Confirmar** indicando ruta final del archivo creado/sobreescrito

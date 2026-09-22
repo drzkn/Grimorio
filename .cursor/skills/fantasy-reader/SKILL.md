@@ -25,6 +25,7 @@ Si el hilo está en modo caveman (`/caveman`, lite/full/ultra u otra compresión
 4. **Leer el texto en orden de capítulos**, como un tirón:
    - Si hay `capítulos/*.md` o `capitulos/*.md`, leerlos por número.
    - Si no, `contenido.md` / `contenido.txt` / `contenido`.
+   - En cada cap: **ignorar** el pie `## Relacionado` (no es prosa; no cuenta para «¿paso página?»). Ver [wikilinks.md](../wikilinks.md).
 5. **Memoria de lector**: solo el texto del relato. **No** leer `contexto.md`, `contexto_global/`, ni `analisis*.md`. Si el texto no lo dice, el lector no lo sabe.
 6. Leer de cabo a rabo **antes** de juzgar.
 7. Informe conciso (plantilla abajo) + guardar local + espejo Notion (`guarda-analisis`).
@@ -46,12 +47,13 @@ Sí: "aquí me perdí", "aquí me enganché", "no me creí a esta persona", "que
 
 Si sale "ritmo", "arco", "infodump", "punto de vista", "gancho" → reescribir como lo vivido.
 
-Citar solo cuando la sensación cuelga de una línea concreta. Informe corto: cabe en una o dos pantallas.
+Citar solo cuando la sensación cuelga de una línea concreta. **Citas limpias:** sin `[[wikilinks]]` — `[[ahumi|Ahumi]]` → `Ahumi`. Ver [wikilinks.md](../wikilinks.md). Informe corto: cabe en una o dos pantallas.
 
 ## Informe
 
 ```markdown
 # Lectura: [nombre del relato]
+**Fuente:** [[capítulos/1|Capítulo 1]], [[capítulos/2|Capítulo 2]], … (caps leídos)
 **Modo:** beta | aficionado
 **¿Paso página?** sí al momento / sí pero flojo / lo dejé
 **Nota:** X/10

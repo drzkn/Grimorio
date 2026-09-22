@@ -83,15 +83,25 @@ Un fichero por personaje, nombre en snake_case (ej. `la_vigilante.md`).
 ```markdown
 # [Nombre del personaje]
 
-**Aparece en:** capítulos [X, Y, Z]
+**Aparece en:** [[contexto_global/capitulos/X|cap X]], [[contexto_global/capitulos/Y|cap Y]]
 
 - **Rol:** protagonista / antagonista / secundario / entidad
 - **Descripción física:** [rasgos relevantes para la narración]
 - **Motivación:** [qué quiere, qué teme]
 - **Poderes / habilidades:** [si aplica]
 - **Evolución hasta cap [X]:** [estado actual del arco]
-- **Relaciones clave:** [con quién, qué tipo de vínculo]
+- **Relaciones clave:** [[otra_ficha|Nombre]] — [vínculo]; …
 ```
+
+### Wikilinks en merge (Obsidian)
+
+Ver [wikilinks.md](../wikilinks.md).
+
+- **Aparece en** y **Relaciones clave**: siempre `[[wikilink]]`. Colisión `1.md` → ruta `[[contexto_global/capitulos/N|cap N]]`, nunca `[[1]]`.
+- Primera mención de personaje/cap en `contexto_historia.md` / `tono_narrador.md` / `resumen.md` → wikilink. Resto, texto plano.
+- `resumen.md` cierra con bloque `## Relacionado` (notas, caps fuente, fichas, tono, historia).
+- Nombre de ficha = snake_case (`la_vigilante.md` → `[[la_vigilante|La Vigilante]]`).
+- **Alta de ficha nueva:** avisar que el cap fuente puede necesitar relink (`contexto-capitulo`) para que la ficha no quede huérfana en el grafo.
 
 ### contexto_historia.md
 

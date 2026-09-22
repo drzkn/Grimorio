@@ -64,21 +64,22 @@ Al trabajar en un relato (edición, análisis, ilustración, contexto global, co
 3. **Leer `contexto.md`** si existe — reglas de mundo del autor. No contradecirlas en la nota.
 4. **Extraer** solo lo que otra sesión necesitaría para no re-leer el capítulo. Sin copiar el texto entero.
 5. **Escribir** `contexto_global/capitulos/<N>.md` con la plantilla de abajo.
-6. **Informar**: relato, cap, ruta, si fue alta o update. 2-4 frases de qué se guardó. No volcar la nota completa al chat.
+6. **Relink del cap fuente** (`capítulos/<N>.md`) — ver «Relink del cap fuente». Dueño: esta skill.
+7. **Informar**: relato, cap, ruta, si fue alta o update, si se relinkeó el fuente. 2-4 frases de qué se guardó. No volcar la nota completa al chat.
 
 ## Plantilla
 
 ```markdown
 # <Título> — Capítulo <N>
 
-**Fuente:** relatos/<relato>/capítulos/<N>.md
+**Fuente:** [[capítulos/<N>|capítulos/<N>.md]]
 **Capturado:** <YYYY-MM-DD>
 
 ## Qué pasa
 [3-6 frases. Hechos, no estilo. Sin spoilers de capítulos posteriores.]
 
 ## Personajes (estado en este cap)
-- **<Nombre>:** [rol en la escena, cambio, dato nuevo. Grafía exacta del autor]
+- **[[ficha|Nombre]]:** [rol en la escena, cambio, dato nuevo. Grafía exacta del autor]
 
 ## Mundo / magia
 - [Hechos nuevos o reglas aplicadas en ESTE capítulo]
@@ -91,12 +92,30 @@ Al trabajar en un relato (edición, análisis, ilustración, contexto global, co
 - Cerrados: [lo que este cap cierra, si hay]
 
 ## Continuidad
-- Depende de: [caps anteriores relevantes, o "ninguno"]
-- Prepara: [qué deja listo para el siguiente]
+- Depende de: [[contexto_global/capitulos/<N>|nota cap <N>]] (o "ninguno")
+- Prepara: [[contexto_global/capitulos/<N>|nota cap <N>]] (si aplica)
 
 ## Imágenes / citas clave
 > "[una o dos citas cortas, solo si anclan tono o un hecho crítico]"
 ```
+
+### Wikilinks
+
+Ver [wikilinks.md](../wikilinks.md). En esta nota:
+
+- **Fuente** y **Continuidad**: siempre ruta completa (`[[capítulos/N|…]]`, `[[contexto_global/capitulos/N|…]]`). Nunca `[[1]]`.
+- **Personajes**: solo fichas que existen en `contexto_global/personajes/` → `[[ahumi|Ahumi]]`.
+- Primera mención en «Qué pasa» puede llevar wikilink; el resto, texto plano.
+
+## Relink del cap fuente
+
+Tras escribir la nota, enlazar `relatos/<relato>/capítulos/<N>.md`:
+
+1. Listar fichas en `contexto_global/personajes/`.
+2. **Primera mención** de cada personaje con ficha → `[[ficha|Etiqueta]]`. Resto de menciones, texto plano. Si un personaje nuevo **no** tiene ficha: dejarlo plano y decirlo (la ficha la crea `build-context`).
+3. **No inventar** nombres que la prosa no dice (ej. La Vigilante en cap 3: va en el pie si hay ficha, no inline).
+4. Añadir o **actualizar** el pie `## Relacionado` (plantilla en `wikilinks.md`). Si el pie ya existe, reescribirlo; no duplicarlo.
+5. El pie no es prosa: otras skills lo ignoran al analizar/leer/ilustrar.
 
 ### Reglas de la nota
 
@@ -123,6 +142,6 @@ No bloquear el flujo principal: si el usuario pidió análisis/ilustración, ent
 Si el usuario pide contexto de varios caps o de un relato entero:
 
 1. Listar caps en `relatos/<relato>/capítulos/`
-2. Saltar los que ya tienen nota al día
-3. Leer y escribir el resto, uno por uno
-4. Informar: creadas / actualizadas / ya al día
+2. Saltar los que ya tienen nota al día **salvo** que falte el pie `## Relacionado` en el fuente → entonces solo relink (paso 6)
+3. Leer y escribir el resto, uno por uno (nota + relink)
+4. Informar: creadas / actualizadas / ya al día / relinkeados

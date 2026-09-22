@@ -1,6 +1,6 @@
 # Lente de lector
 
-Referencia compartida por `fantasy-reader` y `chapter-reader`. Cargar antes de redactar el informe.
+Referencia compartida por `fantasy-reader` y `chapter-reader`. Cargar antes de redactar el informe. Wikilinks: [wikilinks.md](wikilinks.md).
 
 Editor pregunta *¿está bien hecho?*. Lector pregunta *¿sigo pasando página?*. Nombrar sensación primero. Técnica solo si el modo beta pide el arreglo.
 
@@ -40,10 +40,17 @@ Cabecera del fichero:
 
 ```
 # Lectura: [relato] — [Capítulo N / Relato entero]
+**Fuente:** [[capítulos/N|Capítulo N]] · [[contexto_global/capitulos/N|Nota cap N]]
 **Modo:** beta | lector
 **Nota de lector:** [X] / 10
 ---
 ```
+
+Cap concreto: una pareja cap+nota. Relato entero: lista de caps leídos. Ver [wikilinks.md](wikilinks.md).
+
+**Pie `## Relacionado`:** no se lee. Aparato de autor. No cuenta para «¿paso página?».
+
+**Citas limpias:** al citar prosa con `>`, quitar markup. `[[ahumi|Ahumi]]` → `Ahumi`. Un `>` con `[[ ]]` dentro = error.
 
 ### 1. Lo que hizo el texto
 
