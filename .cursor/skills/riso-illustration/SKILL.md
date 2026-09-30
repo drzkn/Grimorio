@@ -1,6 +1,6 @@
 ---
 name: riso-illustration
-description: Genera una ilustración con estética de risografía a partir de un capítulo y el contexto del relato. Usa GenerateImage de Cursor, guarda el PNG en relatos/<relato>/ilustraciones/. Úsalo cuando el usuario diga "ilustra el capítulo", "genera ilustración riso", "riso-illustration", "crea imagen risografía" o pida una ilustración para un capítulo de un relato.
+description: Genera una ilustración con estética de risografía a partir de un capítulo y el contexto del relato. Usa GenerateImage de Cursor, guarda el PNG en el vault, <relato>/ilustraciones/. Úsalo cuando el usuario diga "ilustra el capítulo", "genera ilustración riso", "riso-illustration", "crea imagen risografía" o pida una ilustración para un capítulo de un relato.
 ---
 
 # Riso Illustration
@@ -12,7 +12,7 @@ Generador: `GenerateImage` (namespace `cursor`). No usar MCP de imágenes.
 ## Flujo
 
 1. **Detectar capítulo** — si el usuario no especifica ruta, preguntar qué capítulo ilustrar
-2. **Leer capítulo** — leer el `.md` del capítulo
+2. **Leer capítulo** — `.md` en `<relato>/capítulos/` (vault: `AGENTS.md`).
 3. **Leer contexto** — `contexto.md` en la carpeta padre del capítulo (un nivel arriba de `capítulos/`). Si existe `contexto_global/`, leer merge (personajes, tono) y `capitulos/<N>.md` si está al día. El `.md` fuente sigue haciendo falta para citar la escena visual
 4. **Extraer escena** — una sola escena, la más potente (ver "Selección de escena")
 5. **Construir prompt** — ensamblar en inglés con la plantilla de abajo. No mostrarlo al usuario
@@ -23,7 +23,7 @@ Generador: `GenerateImage` (namespace `cursor`). No usar MCP de imágenes.
      - `aspect_ratio`: `"16:9"`
      - `filename`: `cap-N-riso.png` (N = número del capítulo)
    - El tool guarda un PNG y el cliente lo muestra
-7. **Guardar en el relato** — copiar el PNG a `relatos/<relato>/ilustraciones/<N>.png`. Crear la carpeta si no existe. Si `<N>.png` ya existe, guardar como `<N>-2.png` (incrementar)
+7. **Guardar en el relato** — copiar el PNG a `<relato>/ilustraciones/<N>.png` en el vault (`AGENTS.md`). Crear la carpeta si no existe. Si `<N>.png` ya existe, guardar como `<N>-2.png` (incrementar)
 8. **Informar** — escena elegida (1-2 frases), paleta (COLOR_1 / COLOR_2), ruta del fichero. No volcar el prompt. No incrustar la imagen en markdown (el cliente la muestra solo)
 
 Si hace falta **editar** una ilustración existente (el usuario pide cambios sobre un PNG ya generado): mismo tool `GenerateImage`. `reference_image_paths` = array con el path local del PNG, `description` = instrucciones de edición, `aspect_ratio` = `"16:9"`. Luego copiar el resultado al mismo esquema de `ilustraciones/`.

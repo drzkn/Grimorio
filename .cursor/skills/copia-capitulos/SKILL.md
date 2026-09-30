@@ -39,7 +39,7 @@ Usar el valor de la propiedad `Orden` de cada página:
 
 Determinar la carpeta destino de la página padre en este orden de prioridad:
 
-1. **Base de datos padre** — nombre de la BD en snake_case (ej: "Relatos" → `relatos/`)
+1. **Base de datos padre** — nombre de la BD en snake_case. Excepción: BD "Relatos" → vault (`AGENTS.md`), no el workspace.
 2. **Propiedad "Tipo"** — valor de property `Tipo`, `Type`, `Categoría` o `Category` en snake_case
 3. **Página padre** — título de la página padre en snake_case
 4. **Fallback** — raíz del workspace sin subcarpeta
@@ -47,8 +47,8 @@ Determinar la carpeta destino de la página padre en este orden de prioridad:
 Raíz del workspace: `/Users/diegor/Proyectos/IRU/`
 
 Ejemplo completo:
-- Página "El tejedor de mareas" en BD "Relatos", con BD hija "Capítulos" (Orden: 1, 2, 3) → `relatos/el_tejedor_de_mareas/capítulos/1.md`, `…/2.md`, `…/3.md`
-- Misma página con capítulo de Orden "Prólogo" → `relatos/el_tejedor_de_mareas/capítulos/prologo.md`
+- Página "El tejedor de mareas" en BD "Relatos", con BD hija "Capítulos" (Orden: 1, 2, 3) → `el_tejedor_de_mareas/capítulos/1.md`, `…/2.md`, `…/3.md` (vault)
+- Misma página con capítulo de Orden "Prólogo" → `el_tejedor_de_mareas/capítulos/prologo.md` (vault)
 
 ## Notas
 

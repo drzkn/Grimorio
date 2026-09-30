@@ -36,7 +36,7 @@ Ejemplo: `"El tejedor de mareas"` → `el_tejedor_de_mareas.md`
 
 Determinar la carpeta destino en este orden de prioridad:
 
-1. **Base de datos padre** — si la página pertenece a una base de datos Notion, usar el nombre de la BD en snake_case como carpeta (ej: base de datos "Relatos" → carpeta `relatos/`)
+1. **Base de datos padre** — si la página pertenece a una base de datos Notion, usar el nombre de la BD en snake_case como carpeta. Excepción: BD "Relatos" → vault (`AGENTS.md`), no el workspace.
 2. **Propiedad "Tipo"** — si la página tiene una property llamada `Tipo`, `Type`, `Categoría` o `Category`, usar su valor en snake_case
 3. **Página padre** — si la página está dentro de otra página de Notion, usar el título de la página padre en snake_case
 4. **Fallback** — si nada de lo anterior aplica, guardar en la raíz del workspace sin subcarpeta
@@ -44,7 +44,7 @@ Determinar la carpeta destino en este orden de prioridad:
 Raíz del workspace: `/Users/diegor/Proyectos/IRU/`
 
 Ejemplo completo:
-- Página "El tejedor de mareas" en BD "Relatos" → `relatos/el_tejedor_de_mareas/contenido.md`
+- Página "El tejedor de mareas" en BD "Relatos" → `el_tejedor_de_mareas/contenido.md` (vault)
 - Página "Kael" con Tipo = "Personaje" → `personaje/kael/contenido.md`
 - Página "Notas sueltas" sin BD ni tipo → `notas_sueltas/contenido.md`
 

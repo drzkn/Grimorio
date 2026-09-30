@@ -21,7 +21,7 @@ Si el hilo está en modo caveman (`/caveman`, lite/full/ultra u otra compresión
 
 1. **Relato**: "¿Qué relato quieres que lea?" — esperar.
 2. **Modo** si no está en el mensaje: "¿Beta (señal para el autor) o aficionado (leer por ganas, con olfato de género)?"
-3. **Localizar carpeta** en `relatos/`. Nombres pueden ir snake_case o camelCase. Varias candidatas → pedir confirmación.
+3. **Localizar carpeta** en el vault (`AGENTS.md`). Nombres pueden ir snake_case o camelCase. Varias candidatas → pedir confirmación.
 4. **Leer el texto en orden de capítulos**, como un tirón:
    - Si hay `capítulos/*.md` o `capitulos/*.md`, leerlos por número.
    - Si no, `contenido.md` / `contenido.txt` / `contenido`.
@@ -53,7 +53,7 @@ Citar solo cuando la sensación cuelga de una línea concreta. **Citas limpias:*
 
 ```markdown
 # Lectura: [nombre del relato]
-**Fuente:** [[capítulos/1|Capítulo 1]], [[capítulos/2|Capítulo 2]], … (caps leídos)
+**Fuente:** [[<relato>/capítulos/1|Capítulo 1]], [[<relato>/capítulos/2|Capítulo 2]], … (caps leídos)
 **Modo:** beta | aficionado
 **¿Paso página?** sí al momento / sí pero flojo / lo dejé
 **Nota:** X/10
@@ -98,7 +98,7 @@ X/10 — [1 frase honesta]
 
 ## Guardar
 
-Carpeta `relatos/<relato>/lectura/`. Crear si no existe.
+Carpeta `<relato>/lectura/` en el vault (`AGENTS.md`). Crear si no existe.
 
 - `lectura/beta.md` o `lectura/aficionado.md`
 - Sobreescribir el fichero de ese modo. No tocar el otro.

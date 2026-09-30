@@ -17,14 +17,14 @@ Fuente = bloque `### Para 8/10` de `analisis_cap{N}.md` (ítems `🎯8`). El res
 ## Flujo
 
 1. **Relato + cap.** Si viene de `chapter-editor`, ya lo sabe. Si falta, preguntar.
-2. **Leer** `relatos/<relato>/analisis_cap{N}.md`. Si no existe → parar. Pedir `chapter-editor` primero.
+2. **Leer** `<relato>/analisis_cap{N}.md` en el vault (`AGENTS.md`). Si no existe → parar. Pedir `chapter-editor` primero.
 3. **Extraer el contrato 8/10.** Completado: lista de ítems `🎯8` con ancla `>` + `→`, más `Elecciones` si las hay.
    - Hay `### Para 8/10` → usar esos números.
    - No hay (análisis viejo) → tomar de la lista accionable todo `🎯8`; si tampoco hay marca, tomar 🟡 + 🔴 de ritmo/personaje/mundo/hilos/magia/cierre. **No** tomar 🔴 de prosa/grama salvo que rompa inmersión. Avisar: «análisis sin 🎯8; inferí la barra».
    - Cero ítems → parar. «Nada para 8/10. No hay redline.»
 4. **Leer el capítulo fuente** (mismo criterio que `chapter-editor`). Base = texto **actual**, post-corrección ortográfica si ya corrió, **sin** el pie `## Relacionado`. El redline no reproduce ese pie. Ver [wikilinks.md](../wikilinks.md).
 5. **Aplicar cada ítem 🎯8** sobre una copia. Orden: de abajo a arriba. Completado: cada ítem en `aplicados` u `omitidos`. Tras aplicar, el texto propuesto debe poder puntuar **≥8/10** (ritmo, gente, lore de este cap, cierre). Si un omitido impide la barra, decirlo.
-6. **Guardar** `relatos/<relato>/revision_cap{N}.md` (sobreescribir). Formato: «Fichero local».
+6. **Guardar** `<relato>/revision_cap{N}.md` en el vault (`AGENTS.md`) (sobreescribir). Formato: «Fichero local».
 7. **Espejar** con `guarda-analisis`, tipo `Capítulo revisado — Cap {N}`. Padre = fila `Análisis — Cap {N}` en `Revisiones`. Un toggle heading. No escribir en `Capítulos`. No tocar `Edición`.
 8. **Decir** URL del padre, ítems aplicados/omitidos, elecciones tomadas, si la barra ≥8/10 queda cubierta, y que el cap canónico sigue igual.
 
@@ -71,7 +71,7 @@ Alta y baja **contiguas**. Pintar solo el delta, no el párrafo entero si cambi�
 
 ```
 # Capítulo revisado: [nombre del relato] — Capítulo [N]
-**Fuente:** [[capítulos/N|Capítulo N]] · [[contexto_global/capitulos/N|Nota cap N]]
+**Fuente:** [[<relato>/capítulos/N|Capítulo N]] · [[<relato>/contexto_global/capitulos/N|Nota cap N]]
 **Barra:** ≥8/10 cubierta | no cubierta — [omitido que lo impide]
 **🎯8:** [aplicados] / [total]
 **Omitidos:** [lista corta, o «ninguno»]

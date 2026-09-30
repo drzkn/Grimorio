@@ -1,7 +1,7 @@
 ---
 name: contexto-capitulo
 description: >-
-  Crea o actualiza la nota de contexto de un capítulo en relatos/<relato>/contexto_global/capitulos/<N>.md.
+  Crea o actualiza la nota de contexto de un capítulo en el vault, <relato>/contexto_global/capitulos/<N>.md.
   Es un snapshot wiki (qué pasó EN ese cap), no una skill de Cursor: se carga por ruta, no por índice.
   Úsalo cuando el usuario diga "guarda el contexto del capítulo", "crea skill del capítulo",
   "contexto-capitulo", "captura el capítulo", o cuando la IA termine de leer un capítulo entero
@@ -17,17 +17,17 @@ Respuesta al usuario en **español**.
 ## Dónde vive cada nota
 
 ```
-relatos/<relato>/contexto_global/capitulos/<N>.md
+<relato>/contexto_global/capitulos/<N>.md
 ```
 
-Ejemplo: `relatos/el_tejedor_de_mareas/contexto_global/capitulos/1.md`
+Ejemplo: `el_tejedor_de_mareas/contexto_global/capitulos/1.md`
 
-- `<relato>` = mismo nombre de carpeta que en `relatos/`
+- `<relato>` = carpeta en el vault (`AGENTS.md`)
 - `<N>` = número del capítulo, sin padding (`1`, `2`, `4`)
 - Crear `contexto_global/capitulos/` si no existe
 - Markdown plano. **No** `SKILL.md`, **no** YAML, **no** `.cursor/skills/`
 - Cursor **no** las indexa. Cargar con Glob/Read
-- Van a git con el resto de `contexto_global/`
+- Viven en el vault (`AGENTS.md`)
 
 Capas (no mezclar):
 
@@ -39,7 +39,7 @@ Capas (no mezclar):
 
 ## Cuándo crear / actualizar
 
-**Crear** si no existe `relatos/<relato>/contexto_global/capitulos/<N>.md`.
+**Crear** si no existe `<relato>/contexto_global/capitulos/<N>.md` en el vault (`AGENTS.md`).
 
 **Actualizar** (sobreescribir) si:
 - El usuario lo pide explícitamente
@@ -52,7 +52,7 @@ Capas (no mezclar):
 
 Al trabajar en un relato (edición, análisis, ilustración, contexto global, continuidad):
 
-1. Glob `relatos/<relato>/contexto_global/capitulos/*.md`
+1. Glob `<relato>/contexto_global/capitulos/*.md` en el vault (`AGENTS.md`)
 2. Leer la nota del capítulo objetivo **y** las anteriores si hace falta continuidad
 3. Leer también el merge (`resumen.md`, `contexto_historia.md`, `tono_narrador.md`, `personajes/`)
 4. Solo leer el `.md` fuente si no hay nota, está desfasada, o el usuario pide el texto literal (citas, corrección, ilustración de una escena concreta)
@@ -60,7 +60,7 @@ Al trabajar en un relato (edición, análisis, ilustración, contexto global, co
 ## Flujo — capturar
 
 1. **Identificar relato y capítulo.** Si no está claro, preguntar.
-2. **Leer el capítulo** en `relatos/<relato>/capítulos/` (`N.md`, `capitulo_N.md`, `cap_N.md`).
+2. **Leer el capítulo** en `<relato>/capítulos/` (`N.md`, `capitulo_N.md`, `cap_N.md`).
 3. **Leer `contexto.md`** si existe — reglas de mundo del autor. No contradecirlas en la nota.
 4. **Extraer** solo lo que otra sesión necesitaría para no re-leer el capítulo. Sin copiar el texto entero.
 5. **Escribir** `contexto_global/capitulos/<N>.md` con la plantilla de abajo.
@@ -72,7 +72,7 @@ Al trabajar en un relato (edición, análisis, ilustración, contexto global, co
 ```markdown
 # <Título> — Capítulo <N>
 
-**Fuente:** [[capítulos/<N>|capítulos/<N>.md]]
+**Fuente:** [[<relato>/capítulos/<N>|capítulos/<N>.md]]
 **Capturado:** <YYYY-MM-DD>
 
 ## Qué pasa
@@ -92,8 +92,8 @@ Al trabajar en un relato (edición, análisis, ilustración, contexto global, co
 - Cerrados: [lo que este cap cierra, si hay]
 
 ## Continuidad
-- Depende de: [[contexto_global/capitulos/<N>|nota cap <N>]] (o "ninguno")
-- Prepara: [[contexto_global/capitulos/<N>|nota cap <N>]] (si aplica)
+- Depende de: [[<relato>/contexto_global/capitulos/<N>|nota cap <N>]] (o "ninguno")
+- Prepara: [[<relato>/contexto_global/capitulos/<N>|nota cap <N>]] (si aplica)
 
 ## Imágenes / citas clave
 > "[una o dos citas cortas, solo si anclan tono o un hecho crítico]"
@@ -103,13 +103,13 @@ Al trabajar en un relato (edición, análisis, ilustración, contexto global, co
 
 Ver [wikilinks.md](../wikilinks.md). En esta nota:
 
-- **Fuente** y **Continuidad**: siempre ruta completa (`[[capítulos/N|…]]`, `[[contexto_global/capitulos/N|…]]`). Nunca `[[1]]`.
+- **Fuente** y **Continuidad**: siempre ruta desde la raíz del vault (`[[<relato>/capítulos/N|…]]`, `[[<relato>/contexto_global/capitulos/N|…]]`). Nunca `[[1]]`.
 - **Personajes**: solo fichas que existen en `contexto_global/personajes/` → `[[ahumi|Ahumi]]`.
 - Primera mención en «Qué pasa» puede llevar wikilink; el resto, texto plano.
 
 ## Relink del cap fuente
 
-Tras escribir la nota, enlazar `relatos/<relato>/capítulos/<N>.md`:
+Tras escribir la nota, enlazar `<relato>/capítulos/<N>.md`:
 
 1. Listar fichas en `contexto_global/personajes/`.
 2. **Primera mención** de cada personaje con ficha → `[[ficha|Etiqueta]]`. Resto de menciones, texto plano. Si un personaje nuevo **no** tiene ficha: dejarlo plano y decirlo (la ficha la crea `build-context`).
@@ -141,7 +141,7 @@ No bloquear el flujo principal: si el usuario pidió análisis/ilustración, ent
 
 Si el usuario pide contexto de varios caps o de un relato entero:
 
-1. Listar caps en `relatos/<relato>/capítulos/`
+1. Listar caps en `<relato>/capítulos/`
 2. Saltar los que ya tienen nota al día **salvo** que falte el pie `## Relacionado` en el fuente → entonces solo relink (paso 6)
 3. Leer y escribir el resto, uno por uno (nota + relink)
 4. Informar: creadas / actualizadas / ya al día / relinkeados

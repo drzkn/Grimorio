@@ -71,14 +71,16 @@ Si otro relato tiene más columnas (tipo, capítulo, fecha, nota): leer filas ex
 
 Clave = texto del heading **sin fecha**. Match = `starts with` `## {clave}`.
 
+Rutas relativas al vault (`AGENTS.md`).
+
 | Tipo | Clave | Fichero | Padre |
 |------|--------|---------|-------|
-| edición cap | `Edición — Cap {N}` | `relatos/<relato>/analisis_cap{N}.md` | `Análisis — Cap {N}` |
-| redline cap | `Capítulo revisado — Cap {N}` | `relatos/<relato>/revision_cap{N}.md` | `Análisis — Cap {N}` |
-| lectura cap | `Lectura beta — Cap {N}` | `relatos/<relato>/lectura/beta_cap{N}.md` | `Análisis — Cap {N}` |
-| lectura cap | `Lectura aficionado — Cap {N}` | `relatos/<relato>/lectura/aficionado_cap{N}.md` | `Análisis — Cap {N}` |
-| lectura relato | `Lectura beta — Relato` | `relatos/<relato>/lectura/beta.md` | `Análisis — Relato` |
-| lectura relato | `Lectura aficionado — Relato` | `relatos/<relato>/lectura/aficionado.md` | `Análisis — Relato` |
+| edición cap | `Edición — Cap {N}` | `<relato>/analisis_cap{N}.md` | `Análisis — Cap {N}` |
+| redline cap | `Capítulo revisado — Cap {N}` | `<relato>/revision_cap{N}.md` | `Análisis — Cap {N}` |
+| lectura cap | `Lectura beta — Cap {N}` | `<relato>/lectura/beta_cap{N}.md` | `Análisis — Cap {N}` |
+| lectura cap | `Lectura aficionado — Cap {N}` | `<relato>/lectura/aficionado_cap{N}.md` | `Análisis — Cap {N}` |
+| lectura relato | `Lectura beta — Relato` | `<relato>/lectura/beta.md` | `Análisis — Relato` |
+| lectura relato | `Lectura aficionado — Relato` | `<relato>/lectura/aficionado.md` | `Análisis — Relato` |
 
 Fecha = día de la subida, `YYYY-MM-DD`.
 
@@ -135,7 +137,7 @@ Conversión desde el `.md` local:
 - Headings internos (`##`, `###`) se quedan, ya indentados: viven *dentro* del toggle.
 - Espejo: no reescribir el análisis al subirlo.
 - Spans de color (`<span color="red">`, `<span color="gray">`) y tachado (`~~…~~`) se copian tal cual. Los trae `capitulo-revisado`.
-- **Wikilinks** (`[[ahumi|Ahumi]]`, `[[capítulos/N|…]]`): se copian **literales**. No convertir a texto, no borrar, no crear menciones Notion. Ver [wikilinks.md](../wikilinks.md).
+- **Wikilinks** (`[[ahumi|Ahumi]]`, `[[<relato>/capítulos/N|…]]`): se copian **literales**. No convertir a texto, no borrar, no crear menciones Notion. Ver [wikilinks.md](../wikilinks.md).
 
 ## No hacer
 

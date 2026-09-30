@@ -4,20 +4,21 @@ Referencia compartida. Cargar con una línea al tocar caps fuente, notas, fichas
 
 ## Vault
 
-Vault = `relatos/<relato>/` (ahí vive `.obsidian`). Fuera de esa carpeta los wikilinks no resuelven.
+Path: `AGENTS.md`. Cada relato = `<relato>/`. Wikilinks resuelven desde esa raíz.
 
 ## Sintaxis
 
-- `[[ahumi|Ahumi]]`, `[[la_vigilante|La Vigilante]]`
-- Target = nombre de fichero en snake_case, **sin** `.md`
+- `[[ahumi|Ahumi]]`, `[[la_vigilante|La Vigilante]]` si ese nombre de fichero es único en el vault
+- Si el mismo nombre existe en otro relato: `[[<relato>/contexto_global/personajes/ahumi|Ahumi]]`
+- Target de ruta = camino desde la raíz del vault, **sin** `.md`
 - Etiqueta = grafía que ve el lector
 
 ## Colisión de nombres
 
-`1.md` existe en `capítulos/` y en `contexto_global/capitulos/`. Siempre ruta:
+`1.md` existe en `<relato>/capítulos/` y en `<relato>/contexto_global/capitulos/`, y puede repetirse en otro relato. Siempre ruta desde la raíz del vault:
 
-- `[[capítulos/1|Capítulo 1]]`
-- `[[contexto_global/capitulos/1|Nota cap 1]]`
+- `[[<relato>/capítulos/1|Capítulo 1]]`
+- `[[<relato>/contexto_global/capitulos/1|Nota cap 1]]`
 
 **Nunca `[[1]]`.**
 
@@ -40,8 +41,8 @@ Empieza en el `---` final seguido de `## Relacionado`:
 ```markdown
 ---
 ## Relacionado
-- Nota: [[contexto_global/capitulos/N|Nota cap N]]
-- Anterior: [[capítulos/N|Capítulo N]] · Siguiente: [[capítulos/N|Capítulo N]]
+- Nota: [[<relato>/contexto_global/capitulos/N|Nota cap N]]
+- Anterior: [[<relato>/capítulos/N|Capítulo N]] · Siguiente: [[<relato>/capítulos/N|Capítulo N]]
 - Personajes: [[ahumi|Ahumi]], …
 ```
 
@@ -73,7 +74,7 @@ Un enlace por personaje y capítulo. Resto de menciones, texto plano. No inventa
 ## Cabecera de informes
 
 ```markdown
-**Fuente:** [[capítulos/N|Capítulo N]] · [[contexto_global/capitulos/N|Nota cap N]]
+**Fuente:** [[<relato>/capítulos/N|Capítulo N]] · [[<relato>/contexto_global/capitulos/N|Nota cap N]]
 ```
 
 - `chapter-reader` / análisis / redline: un cap.

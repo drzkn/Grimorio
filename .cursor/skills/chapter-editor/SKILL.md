@@ -12,7 +12,7 @@ Analizar un capítulo concreto de un relato de fantasía como editor profesional
 1. **Preguntar qué relato analizar**: "¿De qué relato quieres que analice un capítulo?" — esperar respuesta del usuario.
 2. **Preguntar qué capítulo analizar**: "¿Qué capítulo quieres que analice? (número, nombre o título)" — esperar respuesta del usuario.
    - Si el usuario pide analizar el relato entero, "feedback editorial" o "revisa como editor" **sin** número de cap: no hacer pasada de obra ni nota del relato. Preguntar qué capítulo. Esta skill no puntúa la novela completa.
-3. **Localizar la carpeta del relato**: buscar en el proyecto una carpeta cuyo nombre coincida, teniendo en cuenta que las carpetas pueden estar en snake_case o camelCase. Usar Glob o búsqueda por nombre. Si hay varias candidatas, presentarlas y pedir confirmación.
+3. **Localizar la carpeta del relato**: buscar en el vault (`AGENTS.md`) una carpeta cuyo nombre coincida (snake_case o camelCase). Si hay varias candidatas, presentarlas y pedir confirmación.
 4. **Localizar el capítulo**:
    - Primero buscar un fichero dedicado al capítulo en la carpeta del relato: `capitulo_1.md`, `cap1.md`, `capitulo_uno.md`, etc.
    - Si no existe fichero dedicado, leer `contenido.md` (o `contenido.txt`) y extraer la sección correspondiente al capítulo buscado (buscar por encabezado `# Capítulo X`, `## Capítulo X`, título del capítulo, etc.).
@@ -172,7 +172,7 @@ Una vez generado el veredicto, guardar el análisis completo (Parte 1 + Parte 2 
 
 ```
 # Análisis editorial: [nombre del relato] — Capítulo [X]
-**Fuente:** [[capítulos/X|Capítulo X]] · [[contexto_global/capitulos/X|Nota cap X]]
+**Fuente:** [[<relato>/capítulos/X|Capítulo X]] · [[<relato>/contexto_global/capitulos/X|Nota cap X]]
 **Nota:** [X] / 10
 ---
 ```

@@ -10,7 +10,7 @@ Objetivo principal: **revisar la carpeta `contexto_global/` existente de un rela
 ## Flujo de trabajo
 
 1. **Identificar el relato**: si no está claro en el mensaje, preguntar "¿De qué relato quieres revisar el contexto?".
-2. **Localizar la carpeta del relato**: buscar en `relatos/` una carpeta cuyo nombre coincida (snake_case o camelCase). Si varias candidatas, presentarlas y pedir confirmación.
+2. **Localizar la carpeta del relato**: buscar en el vault (`AGENTS.md`) una carpeta cuyo nombre coincida (snake_case o camelCase). Si varias candidatas, presentarlas y pedir confirmación.
 3. **Revisar el estado actual de `contexto_global/`** (paso central): buscar la carpeta dentro de la del relato **antes de leer ningún capítulo fuente**.
    - **Si existe**: cargar el merge (`resumen.md`, `contexto_historia.md`, `tono_narrador.md`, `personajes/`). Leer la cabecera "Capítulos incluidos" para saber hasta dónde está sincronizado. Glob `contexto_global/capitulos/*.md`: esas notas son la **fuente del merge**, no un extra. No se descartan ni se rehacen el merge ni las notas al día.
    - **Si solo existe un `contexto_global.md` antiguo de una sola pieza**: migrarlo a la nueva estructura de carpeta y seguir.
@@ -83,7 +83,7 @@ Un fichero por personaje, nombre en snake_case (ej. `la_vigilante.md`).
 ```markdown
 # [Nombre del personaje]
 
-**Aparece en:** [[contexto_global/capitulos/X|cap X]], [[contexto_global/capitulos/Y|cap Y]]
+**Aparece en:** [[<relato>/contexto_global/capitulos/X|cap X]], [[<relato>/contexto_global/capitulos/Y|cap Y]]
 
 - **Rol:** protagonista / antagonista / secundario / entidad
 - **Descripción física:** [rasgos relevantes para la narración]
@@ -97,7 +97,7 @@ Un fichero por personaje, nombre en snake_case (ej. `la_vigilante.md`).
 
 Ver [wikilinks.md](../wikilinks.md).
 
-- **Aparece en** y **Relaciones clave**: siempre `[[wikilink]]`. Colisión `1.md` → ruta `[[contexto_global/capitulos/N|cap N]]`, nunca `[[1]]`.
+- **Aparece en** y **Relaciones clave**: siempre `[[wikilink]]`. Colisión `1.md` → ruta `[[<relato>/contexto_global/capitulos/N|cap N]]`, nunca `[[1]]`.
 - Primera mención de personaje/cap en `contexto_historia.md` / `tono_narrador.md` / `resumen.md` → wikilink. Resto, texto plano.
 - `resumen.md` cierra con bloque `## Relacionado` (notas, caps fuente, fichas, tono, historia).
 - Nombre de ficha = snake_case (`la_vigilante.md` → `[[la_vigilante|La Vigilante]]`).

@@ -1,6 +1,8 @@
 # Grimorio
 Conjunto de skills para manejar el lore de distintos relatos.
 
+Los relatos viven en el vault de Obsidian, no en este repo. Path: `AGENTS.md`.
+
 Las skills viven en `.cursor/skills/`. Invocar por nombre o por la frase de cada descripción.
 
 ## Notion → local
@@ -21,4 +23,4 @@ Las skills viven en `.cursor/skills/`. Invocar por nombre o por la frase de cada
 - **guarda-analisis** — Espeja informes locales en la BD `Revisiones` de Notion (un padre por cap, un toggle por informe). No genera el análisis.
 
 ## Ilustración
-- **riso-illustration** — Ilustración riso de una escena del cap. PNG en `relatos/<relato>/ilustraciones/`.
+- **riso-illustration** — Ilustración riso de una escena del cap. PNG en `<relato>/ilustraciones/` (vault).

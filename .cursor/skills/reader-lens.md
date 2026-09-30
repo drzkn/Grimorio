@@ -40,7 +40,7 @@ Cabecera del fichero:
 
 ```
 # Lectura: [relato] — [Capítulo N / Relato entero]
-**Fuente:** [[capítulos/N|Capítulo N]] · [[contexto_global/capitulos/N|Nota cap N]]
+**Fuente:** [[<relato>/capítulos/N|Capítulo N]] · [[<relato>/contexto_global/capitulos/N|Nota cap N]]
 **Modo:** beta | lector
 **Nota de lector:** [X] / 10
 ---

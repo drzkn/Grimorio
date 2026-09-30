@@ -23,7 +23,7 @@ Si el hilo está en modo caveman (`/caveman`, lite/full/ultra u otra compresión
 1. **Relato**: "¿De qué relato quieres que lea un capítulo?" — esperar.
 2. **Capítulo**: "¿Qué capítulo? (número, nombre o título)" — esperar.
 3. **Modo** si no está en el mensaje: "¿Beta (señal para el autor) o aficionado (leer por ganas, con olfato de género)?"
-4. **Localizar carpeta** en `relatos/`. Nombres pueden ir snake_case o camelCase. Varias candidatas → pedir confirmación.
+4. **Localizar carpeta** en el vault (`AGENTS.md`). Nombres pueden ir snake_case o camelCase. Varias candidatas → pedir confirmación.
 5. **Localizar el capítulo**:
    - `capítulos/<N>.md` o `capitulos/<N>.md` (este repo usa eso).
    - Si no: `capitulo_N.md`, `capN.md`, etc.
@@ -61,7 +61,7 @@ Citar solo cuando la sensación cuelga de una línea concreta. **Citas limpias:*
 
 ```markdown
 # Lectura: [nombre del relato] — Capítulo [N]
-**Fuente:** [[capítulos/N|Capítulo N]] · [[contexto_global/capitulos/N|Nota cap N]]
+**Fuente:** [[<relato>/capítulos/N|Capítulo N]] · [[<relato>/contexto_global/capitulos/N|Nota cap N]]
 **Modo:** beta | aficionado
 **¿Paso página?** sí al momento / sí pero flojo / lo dejé
 **Nota:** X/10
@@ -106,7 +106,7 @@ X/10 — [1 frase honesta]
 
 ## Guardar
 
-Carpeta `relatos/<relato>/lectura/`. Crear si no existe.
+Carpeta `<relato>/lectura/` en el vault (`AGENTS.md`). Crear si no existe.
 
 - `lectura/beta_cap<N>.md` o `lectura/aficionado_cap<N>.md`
 - `<N>` = número del capítulo, sin padding (`1`, `2`, `4`)
