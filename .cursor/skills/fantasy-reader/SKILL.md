@@ -25,7 +25,7 @@ Si el hilo está en modo caveman (`/caveman`, lite/full/ultra u otra compresión
 4. **Leer el texto en orden de capítulos**, como un tirón:
    - Si hay `capítulos/*.md` o `capitulos/*.md`, leerlos por número.
    - Si no, `contenido.md` / `contenido.txt` / `contenido`.
-5. **Memoria de lector**: solo el texto del relato. **No** leer `contexto.md`, `contexto_global/`, ni `analisis*.md`. Si el texto no lo dice, el lector no lo sabe.
+5. **Memoria de lector**: solo el texto del relato. **No** leer `contexto.md`, `contexto_global/`, `analisis*.md`, `sinopsis.md` ni `sugerencia_capitulos.md`. Si el texto no lo dice, el lector no lo sabe.
 6. Leer de cabo a rabo **antes** de juzgar.
 7. Informe conciso (plantilla abajo) + guardar local + espejo Notion (`guarda-analisis`).
 

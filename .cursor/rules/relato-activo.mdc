@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Relato activo
 
-Antes de análisis, contexto, copia Notion, lectura o ilustración: leer `.cursor/relato-activo.md`.
+Antes de análisis, contexto, copia Notion, lectura, ilustración, sinopsis o sugerencia de capítulos: leer `.cursor/relato-activo.md`.
 
 - Si falta, o el usuario cambia de obra: skill `iniciar-relato`.
 - `ruta`, `nombre`, `slug`, `notion_query` salen de ese fichero.

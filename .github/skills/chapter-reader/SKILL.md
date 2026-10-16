@@ -32,6 +32,7 @@ Si el hilo está en modo caveman (`/caveman`, lite/full/ultra u otra compresión
 6. **Memoria de lector** (solo lo que ya habría leído):
    - Caps anteriores: texto o, si existe y está al día, `contexto_global/capitulos/<n>.md` para 1..N-1.
    - **No** leer `contexto.md`, merge de mundo, ni `analisis*.md`.
+   - **No** leer `sinopsis.md` ni `sugerencia_capitulos.md` (final y puentes spoilean la lectura).
    - **No** leer caps posteriores a N.
    - Si el capítulo no lo dice y los anteriores tampoco, el lector no lo sabe.
 7. Leer el capítulo **entero** antes de juzgar.

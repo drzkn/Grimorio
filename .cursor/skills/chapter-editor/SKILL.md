@@ -20,16 +20,18 @@ Analizar un capítulo concreto de un relato de fantasía como editor profesional
 5. **Leer contexto** (obligatorio para hilos y coherencia):
    - `contexto.md` si existe.
    - Si existe `contexto_global/`: leer el merge (`resumen.md`, `contexto_historia.md`, `tono_narrador.md`, `personajes/`) **y todas** las notas `contexto_global/capitulos/*.md`, no solo la del capítulo analizado. Merge = estado acumulado. Notas de otros caps = hilos abiertos/pagados y hechos ya establecidos. La nota de este cap evita re-descubrirlo; el análisis editorial sigue exigiendo el **texto fuente** de este capítulo.
+   - **Sinopsis (plan de obra):** seguir skill `sinopsis` solo para traer Notion `Roadmap` → `<ruta>/sinopsis.md` si la página tiene cuerpo, y leer esa copia. Si Notion no responde, parar el contraste con la sinopsis y decirlo. Si `Roadmap` no existe o está vacío y tampoco hay local: una línea en el informe («sin plan de obra») y seguir. **No** crear ni grillar la sinopsis a mitad del análisis. **No** correr `sugerencia-capitulos`. **No** leer `sugerencia_capitulos.md` como vara.
    - Contrastar el capítulo contra lore y contra caps previos/siguientes documentados. Toda contradicción se cita: fragmento de este cap + hecho/regla contradicho.
 6. **Analizar el capítulo completo** antes de emitir juicio.
 7. **Generar anotaciones inline** sobre pasajes concretos del capítulo.
-8. **Generar informe estructurado** por áreas editoriales, enfocado en el capítulo analizado.
+8. **Generar informe estructurado** por áreas editoriales, enfocado en el capítulo analizado (incluye sección 9 si hay plan).
 9. **Cierre con veredicto** y prioridad de revisiones, incluyendo **nota /10**.
 10. **Guardar el análisis** en `<ruta>/analisis_capX.md` (X = número o nombre del capítulo). Si ya existe, sobreescribir.
 11. **Espejar en Notion**: seguir la skill `guarda-analisis` (tipo `Edición — Cap {N}`). Padre = fila `Análisis — Cap {N}` en la BD hija `Revisiones`. Este informe = **un toggle heading**. No página suelta ni página raíz `Análisis`. No escribir en `Capitulos`.
 12. **Corregir el fichero local del capítulo**: aplicar correcciones ortográficas y gramaticales directamente sobre el fichero fuente `.md`. Solo errores de ortografía y gramática — no reescribir ni cambiar el estilo, estructura ni contenido narrativo.
 13. **Corregir la página de Notion del capítulo**: aplicar las mismas correcciones en la página Notion correspondiente. Ver sección "Corrección en Notion" más abajo.
 14. **Capturar contexto del capítulo**: crear o actualizar `contexto_global/capitulos/<N>.md` según la skill `contexto-capitulo`.
+15. **Desvíos de sinopsis** (si la sección 9 listó alguno): preguntar al escritor por cada uno (sección «Desvíos y confirmación»). No reescribir el capítulo por un desvío de plan.
 
 ---
 
@@ -109,6 +111,23 @@ No evaluar curva planteamiento / nudo / desenlace de la **obra**. No nota /10 de
 - **Agujeros / contradicciones:** incoherencia de trama, regla o hecho contra `contexto.md`, merge de `contexto_global/`, o notas de otros caps. Citar el pasaje de este cap **y** el hecho contradicho. Sin cita, no hay hallazgo.
 - **Mundo implícito:** si el cap sugiere un mundo más amplio del que muestra, nombrarlo como fortaleza (profundidad) o riesgo (promesa que este cap no carga).
 
+### 9. Contraste con la sinopsis
+
+Solo si hay plan (`sinopsis.md` tras refrescar desde `Roadmap`). Si no hay plan: una línea «sin plan de obra» y omitir el resto de esta sección. **No** usar `sugerencia_capitulos.md` aquí: un capítulo que no sigue un puente `sugerido` no es un desvío.
+
+Por cada choque: cita del capítulo + beat o promesa de `sinopsis.md`. Sin cita, no hay desvío.
+
+Tipos:
+
+| Tipo | Qué es |
+|------|--------|
+| Adelanta | El cap llega a un beat previsto para un tramo posterior |
+| Omite | Falta un beat previsto para este tramo |
+| Contradice | El cap niega un beat, arco o promesa del plan |
+| Hecho nuevo | El cap introduce trama que el plan no contemplaba |
+
+Listar los desvíos de forma que se puedan numerar al preguntar al escritor.
+
 ---
 
 ## Parte 3 — Veredicto editorial
@@ -144,7 +163,7 @@ Reglas:
 - Si el cambio afecta a una zona amplia (varios párrafos), citar el inicio y el final: `"[inicio...]...[...final]"`.
 - La instrucción `→` debe ser accionable en menos de 30 segundos: decir exactamente qué hacer, no solo qué está mal.
 - Si dos problemas afectan al mismo fragmento, agruparlos en una sola entrada con varias instrucciones `→`.
-- Incluir **todos** los problemas detectados en Parte 1 y Parte 2 (incluida la sección 8), no solo los críticos.
+- Incluir **todos** los problemas detectados en Parte 1 y Parte 2 (incluidas las secciones 8 y 9), no solo los críticos. Los desvíos de sinopsis van a la lista con área `SINOPSIS` y el fragmento citado; la resolución (plan manda / texto manda) la decide el escritor en el paso 15.
 
 Una vez generado el veredicto, guardar el análisis completo (Parte 1 + Parte 2 + Parte 3) en `<ruta>/analisis_capX.md` (X = número o identificador del capítulo). El fichero debe comenzar con:
 
@@ -158,6 +177,20 @@ Seguido del análisis completo.
 
 ---
 
+## Desvíos y confirmación
+
+Tras guardar el informe (y el espejo Notion), si la sección 9 listó desvíos: **una pregunta por desvío**. El escritor elige:
+
+| Respuesta | Acción |
+|-----------|--------|
+| **El plan manda** | Seguir skill `sinopsis`: beat → `desviado`, entrada en `Desvíos pendientes`, escribir `Roadmap` + `sinopsis.md`. El capítulo no se reescribe. La lista de cambios del informe ya dice qué habría que tocar. Ortografía/gramática (pasos 12–13) siguen igual. |
+| **El texto manda** | Seguir skill `sinopsis`, camino «Aplicar confirmación»: primero `Roadmap`, luego copia local, desvío → `Cambios de plan`. |
+| **Pendiente** | Anotar en chat. No tocar el plan. |
+
+No abrir un grill de sinopsis desde este paso. Ubicuo: cualquier cambio del plan = Notion y local en el mismo turno.
+
+---
+
 ## Tono editorial
 
 - Honesto pero constructivo. No adular, no destruir.
@@ -165,6 +198,7 @@ Seguido del análisis completo.
 - Citar texto concreto del capítulo. No hacer afirmaciones vagas.
 - Si el capítulo es muy corto (<500 palabras), indicarlo y ajustar profundidad.
 - Hilos, lore y caps previos: **siempre** (sección 8), con cita. No vale "el lore no cuadra" sin fragmento + hecho contradicho.
+- Contraste con sinopsis: solo con cita (sección 9). No inventar el plan.
 
 ---
 
