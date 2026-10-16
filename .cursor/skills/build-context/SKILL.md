@@ -20,6 +20,7 @@ Objetivo principal: **revisar la carpeta `contexto_global/` existente de un rela
    - Si el usuario indicó capítulos concretos en el mensaje, usar esos.
    - Si no hay capítulos nuevos y el usuario no pidió reprocesar, informar de que el contexto ya está al día y parar.
 5. **Leer `contexto.md`** si existe — worldbuilding manual del autor. Fuente de verdad para reglas de mundo, razas, magia y entidades. No contradecirlo.
+   - **Oficio**: skill `oficio`, cargar `mundo` (consistencia) y `personaje` (fichas: motivación, escalas, defecto).
 6. **Preparar la fuente de cada capítulo a incorporar** (no leer el texto fuente de entrada):
    - **Nota al día** (`contexto_global/capitulos/<N>.md` existe y el `.md` fuente no es más reciente, o no hay fuente): leer **solo la nota**. Esa es la materia prima del merge. No abrir `capítulos/<N>.md`.
    - **Nota ausente o desfasada**: seguir la skill `contexto-capitulo` (leer fuente, escribir/actualizar la nota). Después fusionar **desde esa nota**, no desde el texto completo.

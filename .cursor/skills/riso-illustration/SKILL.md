@@ -15,7 +15,7 @@ Generador: `GenerateImage` (namespace `cursor`). No usar MCP de imágenes.
 2. **Detectar capítulo** — si el usuario no especifica, preguntar qué capítulo ilustrar
 3. **Leer capítulo** — leer el `.md` del capítulo en `<ruta>/capítulos/`
 4. **Leer contexto** — `contexto.md` en `<ruta>`. Si existe `contexto_global/`, leer merge (personajes, tono) y `capitulos/<N>.md` si está al día. El `.md` fuente sigue haciendo falta para citar la escena visual. **Fichas visuales de personajes:** extraerlas de `contexto_global/personajes/*.md`, no de esta skill.
-5. **Extraer escena** — una sola escena, la más potente (ver "Selección de escena")
+5. **Extraer escena** — una sola escena, la más potente (ver "Selección de escena"). Oficio: skill `oficio`, cargar `mundo` (rasgo físico ancla y filtro del PdV para los elementos visuales)
 6. **Construir prompt** — ensamblar en inglés con la plantilla de abajo. No mostrarlo al usuario
 7. **Generar imagen** — `GenerateImage` (namespace `cursor`):
    - Primero `GetDynamicTools` con `namespace: "cursor"`, `toolName: "GenerateImage"`
