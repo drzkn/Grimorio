@@ -28,6 +28,7 @@ Respuesta al usuario en **español**.
 
 1. **Relato activo**: skill `iniciar-relato`.
 2. **Plan vigente**: seguir skill `sinopsis` solo para traer `Roadmap` → `sinopsis.md` si hay cuerpo, y leer esa copia. Si Notion no responde: parar y decirlo. Si no hay plan (Roadmap vacío y no hay local): una línea — «corre `sinopsis` primero» — y parar. No grillar el storyboard aquí.
+   - **Oficio**: skill `oficio`, cargar `trama` (progreso, ritmo, ausencias largas de una trama).
 3. **Caps ya escritos**: glob `<ruta>/capítulos/` (o `capitulos/`). Esos números quedan `anclado`.
 4. **Huecos de llegada**: donde la sinopsis tiene dos beats y ningún tramo entre ellos. Una ruta por hueco (cuántos caps, función, si el ritmo sube / sostiene / respira). Destino = el beat ya cerrado. Hecho nuevo de trama **no** entra en `Roadmap`.
 5. Si el escritor pide afinar el reparto: rondas cortas (formato grill), **solo** ritmo y corte de caps. No desenlace, no destino de arco, no promesas del plan.

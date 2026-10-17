@@ -47,6 +47,7 @@ Al empezar un grill o un contraste: volcar `Roadmap` sobre `sinopsis.md` **antes
 
 1. **Relato activo**: skill `iniciar-relato`.
 2. **Semilla** (sección abajo).
+   - **Oficio** (solo Grill): skill `oficio`, cargar `trama` y `personaje` (arcos). Si no consta cómo escribe el autor, `proceso` (jardinero / arquitecto).
 3. **Camino**:
    - Usuario pide sinopsis / roadmap / grill / afina → **Grill**.
    - `chapter-editor` (o el usuario) dice que el texto manda sobre un desvío → **Aplicar confirmación**.

@@ -62,6 +62,7 @@ Al trabajar en un relato (edición, análisis, ilustración, contexto global, co
 1. **Relato activo** (skill `iniciar-relato`) y **capítulo**. Si falta el capítulo, preguntar.
 2. **Leer el capítulo** en `<ruta>/capítulos/` (`N.md`, `capitulo_N.md`, `cap_N.md`).
 3. **Leer `contexto.md`** si existe — reglas de mundo del autor. No contradecirlas en la nota.
+   - **Oficio**: skill `oficio`, cargar `mundo` (qué regla aplica el cap y si choca con lo previo).
 4. **Extraer** solo lo que otra sesión necesitaría para no re-leer el capítulo. Sin copiar el texto entero.
 5. **Escribir** `contexto_global/capitulos/<N>.md` con la plantilla de abajo.
 6. **Informar**: relato, cap, ruta, si fue alta o update. 2-4 frases de qué se guardó. No volcar la nota completa al chat.

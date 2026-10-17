@@ -6,3 +6,4 @@ Pack de skills reutilizable. Las skills no nombran obras concretas.
 2. Si falta, correr `iniciar-relato` antes de cualquier otra skill de relato.
 3. Paths relativos a la raíz del repo. No hardcodear rutas de otra máquina.
 4. Mismo contenido de skills en `.github/skills/` y `.cursor/skills/`.
+5. Grupos `oficio/` y `carrera/`: canon en `skills/` (raíz). En `.cursor/skills/` y `.github/skills/` son symlinks; editar solo el canon.
