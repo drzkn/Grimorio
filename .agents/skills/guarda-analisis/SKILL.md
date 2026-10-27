@@ -3,8 +3,9 @@ name: guarda-analisis
 description: >-
   Espeja análisis de lectura y edición en Notion: una fila de Revisiones por
   capítulo («Análisis — Cap N»), cada informe en un toggle heading. Úsalo al
-  terminar chapter-editor, chapter-reader, fantasy-reader o
-  promesa-progreso-recompensa, o cuando el usuario
+  terminar chapter-editor, chapter-reader, fantasy-reader,
+  promesa-progreso-recompensa, ppr-promesa, ppr-progreso o
+  ppr-recompensa, o cuando el usuario
   diga "sube el análisis", "guarda feedback en Notion", "guarda-analisis" o
   "sube todos los análisis".
 ---
@@ -159,3 +160,4 @@ Tras guardar el `.md` local, las skills de análisis **ejecutan esta skill** (un
 - `chapter-reader` → padre `Análisis — Cap {N}`, toggle `Lectura {modo} — Cap {N}`
 - `fantasy-reader` → padre `Análisis — Relato`, toggle `Lectura {modo} — Relato`
 - `promesa-progreso-recompensa` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `PPR — Cap {N}` o `PPR — Relato`
+- `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` → mismo padre y toggle PPR que la orquestadora (informe compartido)

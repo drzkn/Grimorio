@@ -1,248 +1,73 @@
 ---
 name: promesa-progreso-recompensa
 description: >-
-  Promesa, progreso y recompensa (Sanderson, cap. La trama): grill estilo
-  grill-me para definirlos en el relato, evaluación global o por capítulo,
-  fichero promesas.md y opcionalmente sinopsis. Triggers: "promesas",
-  "progreso", "recompensas", "promesa-progreso-recompensa", "grill de
-  promesas", "evalúa promesas/progreso/recompensa", "PPR", cap o relato.
+  Orquestadora PPR (Sanderson): varios pilares o petición genérica. Delega a
+  ppr-promesa, ppr-progreso, ppr-recompensa. Un solo foco → skill de pilar
+  autónoma. Triggers "PPR", "promesa-progreso-recompensa", "promesa progreso
+  recompensa", grill/evaluar varios pilares.
 ---
 
-# Promesa, progreso, recompensa
+# PPR — Orquestadora
 
-Tres pilares de enganche narrativo. Teoría en [teoria.md](teoria.md) — leer al grillar o evaluar.
+Coordina promesa, progreso y recompensa. Reglas compartidas: [ppr-comun.md](../ppr-comun.md). Marco: [teoria.md](teoria.md).
 
-Respuesta al usuario en **español**.
+Skills de pilar:
 
-## Capas (no mezclar)
+| Pilar | Skill |
+|-------|--------|
+| promesa | `ppr-promesa` |
+| progreso | `ppr-progreso` |
+| recompensa | `ppr-recompensa` |
 
-| Path | Qué es |
-|------|--------|
-| `<ruta>/promesas.md` | Canon local de promesas, progreso planificado y recompensas por hilo |
-| Notion `Roadmap` + `<ruta>/sinopsis.md` | Plan de obra. Sección `## Promesas` solo con confirmación explícita del escritor |
-| `<ruta>/analisis_ppr.md` | Evaluación PPR del relato entero |
-| `<ruta>/analisis_ppr_cap{N}.md` | Evaluación PPR del capítulo N |
+## Cuándo usar esta skill
 
-`<ruta>` / `nombre` / `notion_query` = `.cursor/relato-activo.md` (skill `iniciar-relato`).
+- Usuario pide **dos o tres** pilares (tras `AskQuestion` en `ppr-comun.md`).
+- Petición genérica («trabaja PPR», «grill promesa progreso recompensa») sin skill de pilar concreta.
+- Usuario invocó una skill de pilar y marcó **más de un** pilar en la pregunta de entrada.
 
-## Entrada: confirmar pilares y alcance
+## Cuándo NO (delegar a pilar)
 
-**Siempre** antes de grill o evaluar, aunque el mensaje ya nombre pilares o alcance.
+Tras `AskQuestion`, si `foco` tiene **un solo** pilar: ejecutar la skill de pilar correspondiente **en modo autónomo** (flujo completo) y **parar**. No duplicar trabajo desde aquí.
 
-`AskQuestion` en un solo formulario:
+## Flujo orquestador
 
-1. **Pilares** (`allow_multiple: true`): opciones `Promesa`, `Progreso`, `Recompensa`. Enunciado: «¿Qué pilares quieres trabajar?». Si el mensaje sugería algunos: «Has mencionado […]; confirma o marca otros».
-2. **Alcance** (solo si no quedó claro en el mensaje): `Relato entero` | `Capítulo` (+ pedir N si eligen capítulo).
+1. `iniciar-relato` si falta relato activo.
+2. Entrada: `ppr-comun.md` (pilares + alcance + camino grill/evaluar).
+3. Si `|foco| = 1` → delegar a skill de pilar autónoma; fin.
+4. Comprobar dependencias (`ppr-comun.md`) si `promesa` ∉ `foco`.
+5. Leer `teoria.md` (marco) y, por cada pilar en `foco`, la skill de pilar en **modo delegado** (rama grill o criterios evaluar + `teoria.md` del pilar).
 
-Sin ningún pilar marcado: repetir la pregunta **una vez**. No asumir los tres.
+### Grill (2–3 pilares)
 
-Guardar en sesión:
+1. Semilla (`ppr-comun.md`).
+2. Marcar cerrado/abierto por hilo y por pilar del foco.
+3. **Árbol unificado:** ramas de cada skill de pilar en orden **promesa → progreso → recompensa**.
+4. Rondas, riesgos, tope, confirmación (`ppr-comun.md`).
+5. **Una** escritura `promesas.md` (merge de todos los pilares del foco).
+6. **Una** pregunta volcado sinopsis si aplica (`ppr-comun.md`).
 
-- `foco` ⊆ {`promesa`, `progreso`, `recompensa`}, no vacío.
-- `alcance` = `relato` | `cap {N}`.
+### Evaluar (2–3 pilares)
 
-### Pilares fuera del foco
+1. Fuentes (`ppr-comun.md`).
+2. Aplicar criterios de cada skill de pilar en `foco` (modo delegado).
+3. **Un** informe con merge de secciones evaluadas (`ppr-comun.md`).
+4. **Un** `guarda-analisis`.
 
-Leer de `promesas.md`, `sinopsis.md` o texto. **No** preguntar ni puntuar.
+## Modo delegado (referencia)
 
-### Dependencias
-
-Progreso y recompensa cuelgan de promesas definidas. Si `promesa` ∉ `foco` y no hay promesas en `promesas.md` ni deducibles de sinopsis/texto:
-
-- Avisar.
-- Ofrecer: añadir `promesa` al foco, o una ronda mínima solo para fijar las promesas que esos pilares necesitan.
-
-En grill con varios pilares: un árbol; frontera respeta orden **promesa → progreso → recompensa** (no progreso/recompensa de un hilo aún abierto en el grill).
-
-## Caminos
-
-| Intención del usuario | Camino |
-|----------------------|--------|
-| definir, grill, afilar, planificar promesas/PPR | **Grill** |
-| evaluar, auditar, nota, revisar en texto escrito | **Evaluar** |
-
-Si no queda claro grill vs evaluar: una pregunta en el mismo `AskQuestion` o justo después de pilares/alcance.
-
----
-
-## Camino Grill (estilo grill-me; formato como `sinopsis`)
-
-1. **Relato activo** (`iniciar-relato`).
-2. Confirmar pilares y alcance (arriba).
-3. **Semilla** (orden):
-   - `<ruta>/promesas.md` si existe.
-   - `sinopsis.md` tras volcar `Roadmap` según skill `sinopsis` (solo traer; no grillar sinopsis).
-   - `contexto_global/`, caps del relato.
-   - Mensaje del escritor, si no hay nada local.
-   - Sin semilla: una pregunta («pega premisa o qué prometes al lector») y parar.
-4. Leer [teoria.md](teoria.md). Marcar por hilo y por pilar del foco: **cerrado** vs **abierto** (hueco, contradicción, choque con texto escrito).
-5. **Árbol** (podado al foco):
-   - `promesa`: tono, arcos (o emblemático), paraguas / nuclear, anidamiento, minipromesas.
-   - `progreso`: por promesa fijada — hitos, tramos, pasos atrás, ganchos de cap, riesgo desvío.
-   - `recompensa`: por promesa fijada — qué se entrega, tipo (directa / expansión / sustitución), preparación, dónde se paga, deriva del progreso.
-6. **Frontera** = decisiones abiertas cuyas previas están cerradas. Una ronda = frontera entera, numerada, recomendación `➡️`; «sí» acepta la recomendación.
-
-```
-❓ **Q1** — **<título>**: <hueco concreto>
-➡️ <lectura desde semilla / texto>
-
----
-
-❓ **Q2** — ...
-➡️ ...
-```
-
-7. Señalar riesgos con teoría (minipromesa accidental, subtrama-desvío, sustitución sin preparar).
-8. Recalcular frontera tras respuestas. **Tope**: huecos que cambian compromisos con el lector. Prosa ya fijada, reparto de caps: fuera (`sugerencia-capitulos`).
-9. Frontera vacía → resumir lo acordado (solo pilares del foco). Esperar confirmación de entendimiento común.
-10. Escribir `<ruta>/promesas.md`: **solo** secciones/columnas de los pilares del foco; el resto intacto. Crear fichero con plantilla completa si no existía.
-11. Si el foco incluía `promesa` o `recompensa` **y** hubo cambios en hilos («se abre en» / «se paga en»): preguntar «¿Vuelco las promesas a la sección Promesas de la sinopsis (Roadmap)?». Solo con **sí**: actualizar `## Promesas` en `Roadmap` + `sinopsis.md` (skill `sinopsis`, mismo turno, formato `- **[Hilo]:** se abre en … / se paga en … / estado`). Grill solo de `progreso` → no preguntar.
-12. Informar ruta de `promesas.md`. 2–4 líneas; no volcar el fichero entero al chat.
-
----
-
-## Camino Evaluar
-
-1. Relato activo + confirmar pilares y alcance.
-2. Leer [teoria.md](teoria.md) y checklist.
-3. **Fuentes**:
-   - Alcance cap: texto del cap (mismo criterio que `chapter-editor`: `capitulo_N.md`, `capN.md`, o sección en `contenido.md`).
-   - Alcance relato: caps disponibles + merge `contexto_global/` si existe.
-   - `promesas.md`, `sinopsis.md` si existen.
-   - `contexto_global/capitulos/<N>.md` cuando aplique.
-4. Evaluar **solo** pilares del foco. Sin cita del texto o del plan, no hay hallazgo.
-5. Si hay `promesas.md`, contrastar plan vs texto; no modificar `promesas.md` sin preguntar.
-
-### Criterios por pilar (cap N)
-
-| Pilar | Qué mirar |
-|-------|-----------|
-| Promesa | Promesas abiertas/avanzadas/pagadas en el cap; tono; arco; minipromesas nuevas |
-| Progreso | Escenas que avanzan objetivo vs escenas muertas; pasos atrás; ganchos (legítimo vs pizza); desvío percibido |
-| Recompensa | Pagos parciales; si el cap acerca el pago prometido; coherencia con tipo previsto |
-
-### Criterios por pilar (relato)
-
-| Pilar | Qué mirar |
-|-------|-----------|
-| Promesa | Mapa apertura → cierre; huérfanas; tono inicial vs cuerpo; presentación larga |
-| Progreso | Hilos estancados; subtramas-desvío; anidamiento; page-turner global |
-| Recompensa | Tipo de cada pago; derivación del progreso; promesas rotas |
-
-Propuestas concretas; ante desvío tipo Shadesmar, **preferir cambiar promesa** antes que reescribir todo el progreso (Sanderson).
-
-6. **Guardar informe** (merge por secciones):
-   - Cap: `<ruta>/analisis_ppr_cap{N}.md`
-   - Relato: `<ruta>/analisis_ppr.md`
-   - Si el fichero existe: reescribir solo `## Promesa`, `## Progreso`, `## Recompensa` de los pilares del foco; cabecera y otras secciones intactas.
-   - Si no existe: plantilla completa; pilares no evaluados en cuerpo = «—» o sección mínima «No evaluado en esta pasada».
-7. Ejecutar skill `guarda-analisis` (toggle PPR).
-8. Chat: notas /10 de los pilares evaluados + 2–4 líneas de veredicto.
-
----
-
-## Plantilla `promesas.md`
-
-```markdown
-# Promesas: [nombre del relato]
-
-**Estado:** borrador | vigente
-**Última actualización:** YYYY-MM-DD
-**Última confirmación del escritor:** YYYY-MM-DD
-
-## Tono
-[Qué experiencia promete la presentación. Coherencia género/estilo.]
-
-## Arcos de personaje
-- **[Personaje]:** quiere / le falta / obstáculo / emblemático (sí|no) / arco previsto
-
-## Trama
-- **Paraguas:** [estructura visible]
-- **Nuclear:** [lo que de verdad importa al lector]
-
-## Anidamiento
-[Corchetes: paraguas ⊃ argumental ⊃ personaje ⊃ subtramas. Qué cierra en qué tramo.]
-
-## Hilos (promesa → progreso → recompensa)
-
-| Hilo | Tipo promesa | Se abre en | Progreso (hitos) | Pasos atrás | Recompensa (tipo) | Se paga en | Estado |
-|------|--------------|------------|------------------|-------------|-------------------|------------|--------|
-| ... | tono / arco / trama | cap / acto | ... | ... | directa / expansión / sustitución | ... | abierta / en progreso / pagada / rota |
-
-## Notas de riesgo
-- [minipromesas, subtramas, sustitución…]
-```
-
-Estado del hilo: `abierta` | `en progreso` | `pagada` | `rota`.
-
----
-
-## Plantilla informe PPR
-
-```markdown
-# PPR — [Relato | Cap N]
-
-**Alcance:** relato | capítulo N
-**Última evaluación:** YYYY-MM-DD
-
-## Resumen de notas
-
-| Pilar | Nota | Última evaluación |
-|-------|------|-------------------|
-| Promesa | — o N/10 | YYYY-MM-DD o — |
-| Progreso | — o N/10 | YYYY-MM-DD o — |
-| Recompensa | — o N/10 | YYYY-MM-DD o — |
-
-## Promesa
-
-**Evaluado:** YYYY-MM-DD | **Nota:** N/10
-
-### Hallazgos
-- [cita o referencia] — ...
-
-### Propuestas
-- ...
-
-## Progreso
-
-**Evaluado:** YYYY-MM-DD | **Nota:** N/10
-
-### Hallazgos
-- ...
-
-### Propuestas
-- ...
-
-## Recompensa
-
-**Evaluado:** YYYY-MM-DD | **Nota:** N/10
-
-### Hallazgos
-- ...
-
-### Propuestas
-- ...
-```
-
-Al evaluar un subconjunto de pilares: actualizar filas de «Resumen de notas» y secciones correspondientes; dejar el resto como estaba en el fichero previo.
-
----
+Al leer `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` desde aquí: solo secciones «Rama del grill» y «Evaluar» + su `teoria.md`. Sin `AskQuestion`, sin persistencia, sin Notion.
 
 ## No hacer
 
-- Copiar texto literal del libro fuente privado.
-- Escribir en `Roadmap` / `sinopsis.md` sin confirmación explícita.
-- Asumir los tres pilares sin `AskQuestion`.
-- Repartir capítulos (`sugerencia-capitulos`).
-- Modificar `promesas.md` en evaluar sin permiso del escritor.
-- Inventar citas o promesas no presentes en texto/plan.
+- Ejecutar orquestación cuando solo hay un pilar (usar skill de pilar).
+- Duplicar plantillas o merge (están en `ppr-comun.md`).
+- Lo listado en `ppr-comun.md` § No hacer.
 
-## Relación con otras skills
+## Relación
 
-| Skill | Qué hacer |
-|-------|-----------|
-| `iniciar-relato` | Primero si falta relato activo |
-| `sinopsis` | Traer Roadmap; volcar `## Promesas` solo si el escritor confirma tras grill |
-| `guarda-analisis` | Tras guardar informe PPR local |
-| `chapter-editor` | Mismo criterio de localizar cap; puede contrastar desvíos con `promesas.md` / sinopsis |
-| `sugerencia-capitulos` | No invocar desde esta skill |
+| Skill | Rol |
+|-------|-----|
+| `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` | Un pilar; autónomas o delegadas |
+| `sinopsis` | Volcado `## Promesas` si el escritor confirma |
+| `guarda-analisis` | Tras informe PPR |
+| `sugerencia-capitulos` | No invocar desde PPR |
