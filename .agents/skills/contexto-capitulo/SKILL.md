@@ -25,7 +25,7 @@ Ejemplo: `relatos/<slug>/contexto_global/capitulos/1.md`
 - `<ruta>` / `<slug>` = campos de `.cursor/relato-activo.md` (skill `iniciar-relato`)
 - `<N>` = número del capítulo, sin padding (`1`, `2`, `4`)
 - Crear `contexto_global/capitulos/` si no existe
-- Markdown plano. **No** `SKILL.md`, **no** YAML, **no** `.cursor/skills/`
+- Markdown plano. **No** `SKILL.md`, **no** YAML, **no** `.agents/skills/`
 - Cursor **no** las indexa. Cargar con Glob/Read
 - Van a git con el resto de `contexto_global/`
 
