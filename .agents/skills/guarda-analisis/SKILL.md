@@ -3,7 +3,8 @@ name: guarda-analisis
 description: >-
   Espeja análisis de lectura y edición en Notion: una fila de Revisiones por
   capítulo («Análisis — Cap N»), cada informe en un toggle heading. Úsalo al
-  terminar chapter-editor, chapter-reader o fantasy-reader, o cuando el usuario
+  terminar chapter-editor, chapter-reader, fantasy-reader o
+  promesa-progreso-recompensa, o cuando el usuario
   diga "sube el análisis", "guarda feedback en Notion", "guarda-analisis" o
   "sube todos los análisis".
 ---
@@ -80,6 +81,8 @@ Clave = texto del heading **sin fecha**. Match = `starts with` `## {clave}`.
 | lectura cap | `Lectura aficionado — Cap {N}` | `<ruta>/lectura/aficionado_cap{N}.md` | `Análisis — Cap {N}` |
 | lectura relato | `Lectura beta — Relato` | `<ruta>/lectura/beta.md` | `Análisis — Relato` |
 | lectura relato | `Lectura aficionado — Relato` | `<ruta>/lectura/aficionado.md` | `Análisis — Relato` |
+| PPR cap | `PPR — Cap {N}` | `<ruta>/analisis_ppr_cap{N}.md` | `Análisis — Cap {N}` |
+| PPR relato | `PPR — Relato` | `<ruta>/analisis_ppr.md` | `Análisis — Relato` |
 
 Fecha = día de la subida, `YYYY-MM-DD`.
 
@@ -100,11 +103,13 @@ Página `Análisis — Cap {N}`:
 1. `Edición — Cap {N}`
 2. `Lectura beta — Cap {N}`
 3. `Lectura aficionado — Cap {N}`
+4. `PPR — Cap {N}`
 
 Página `Análisis — Relato`:
 
 1. `Lectura beta — Relato`
 2. `Lectura aficionado — Relato`
+3. `PPR — Relato`
 
 Al insertar uno nuevo, colocarlo según esa lista (después del anterior existente, antes del siguiente). No reordenar el resto.
 
@@ -153,3 +158,4 @@ Tras guardar el `.md` local, las skills de análisis **ejecutan esta skill** (un
 - `chapter-editor` → padre `Análisis — Cap {N}`, toggle `Edición — Cap {N}`
 - `chapter-reader` → padre `Análisis — Cap {N}`, toggle `Lectura {modo} — Cap {N}`
 - `fantasy-reader` → padre `Análisis — Relato`, toggle `Lectura {modo} — Relato`
+- `promesa-progreso-recompensa` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `PPR — Cap {N}` o `PPR — Relato`
