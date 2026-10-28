@@ -1,6 +1,6 @@
 # PPR — reglas compartidas
 
-Usar desde `ppr-promesa`, `ppr-progreso`, `ppr-recompensa` y `promesa-progreso-recompensa` (orquestadora). Respuesta al usuario en **español**.
+Carpeta [.agents/skills/promesa-progreso-recompensa/](.). Origen: cap. «La trama» (Sanderson). Usar desde la orquestadora (`SKILL.md`) y desde `promesa/`, `progreso/`, `recompensa/`. Respuesta al usuario en **español**.
 
 ## Capas (no mezclar)
 
@@ -33,7 +33,7 @@ Sesión:
 
 ### Skill de pilar con varios pilares marcados
 
-Si el usuario invocó `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` y marca **más de un** pilar: delegar a `promesa-progreso-recompensa` con ese foco y alcance; no continuar en la skill de pilar.
+Si el usuario invocó `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` (carpeta `promesa/` / `progreso` / `recompensa/`) y marca **más de un** pilar: delegar a orquestadora `promesa-progreso-recompensa` con ese foco y alcance; no continuar en la skill de pilar.
 
 ### Pilares fuera del foco
 
@@ -44,7 +44,7 @@ Leer de `promesas.md`, `sinopsis.md` o texto. No preguntar ni puntuar.
 Progreso y recompensa cuelgan de promesas definidas. Si `promesa` ∉ `foco` y no hay promesas en `promesas.md` ni deducibles de sinopsis/texto:
 
 - Avisar.
-- Ofrecer: añadir `promesa` al foco, skill `ppr-promesa` primero, o ronda mínima para fijar promesas necesarias.
+- Ofrecer: añadir `promesa` al foco, skill `ppr-promesa` (`promesa/`) primero, o ronda mínima para fijar promesas necesarias.
 
 Grill con varios pilares: frontera en orden **promesa → progreso → recompensa** (no progreso/recompensa de un hilo aún abierto en el grill).
 
@@ -110,7 +110,7 @@ Tras evaluar: ejecutar skill `guarda-analisis` (clave `PPR — Cap {N}` o `PPR �
 
 Solo tras **grill**, si el foco incluía `promesa` o `recompensa` **y** hubo cambios en «se abre en» / «se paga en». Preguntar: «¿Vuelco las promesas a la sección Promesas de la sinopsis (Roadmap)?». Solo con **sí**: skill `sinopsis`, formato `- **[Hilo]:** se abre en … / se paga en … / estado`. Grill solo de `progreso` → no preguntar.
 
-`ppr-recompensa` y `ppr-promesa` pueden disparar esta pregunta en modo autónomo. La orquestadora, una sola vez al final.
+Skills `promesa/` y `recompensa/` pueden disparar esta pregunta en modo autónomo. La orquestadora, una sola vez al final.
 
 ## Plantilla `promesas.md`
 
@@ -216,5 +216,5 @@ La orquestadora fija `foco`, `alcance`, `camino`. La skill de pilar invocada en 
 | `iniciar-relato` | Primero si falta relato activo |
 | `sinopsis` | Roadmap; volcar `## Promesas` solo si el escritor confirma |
 | `guarda-analisis` | Tras informe PPR local |
-| `promesa-progreso-recompensa` | Orquestadora si foco tiene 2–3 pilares |
+| `promesa-progreso-recompensa` | Orquestadora (`SKILL.md` en esta carpeta) si foco tiene 2–3 pilares |
 | `chapter-editor` | Mismo criterio de localizar cap |

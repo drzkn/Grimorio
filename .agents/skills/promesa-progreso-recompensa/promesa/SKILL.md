@@ -1,24 +1,24 @@
 ---
 name: ppr-promesa
 description: >-
-  Pilar promesa (Sanderson): tono, arco, trama paraguas/nuclear. Grill o
-  evaluar cap/relato. Triggers "promesa", "promesas", "grill de promesas",
-  "tono de la historia", "evalúa promesas". Varios pilares → orquestadora
-  promesa-progreso-recompensa.
+  Pilar promesa (Sanderson, cap. La trama): tono, arco, trama paraguas/nuclear.
+  Grill o evaluar cap/relato. Triggers "promesa", "promesas", "grill de
+  promesas", "tono de la historia", "evalúa promesas". Varios pilares →
+  orquestadora promesa-progreso-recompensa.
 ---
 
 # PPR — Promesa
 
-Reglas compartidas: [ppr-comun.md](../ppr-comun.md). Teoría: [teoria.md](teoria.md).
+Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md).
 
 ## Flujo autónomo
 
 1. `iniciar-relato` si falta relato activo.
-2. Entrada en `ppr-comun.md` (proponer **Promesa** en el enunciado). Si marcan más pilares → `promesa-progreso-recompensa` y parar.
+2. Entrada en `comun.md` (proponer **Promesa** en el enunciado). Si marcan más pilares → orquestadora `promesa-progreso-recompensa` y parar.
 3. `foco` = {`promesa`}. `camino` grill o evaluar.
 4. Dependencias: ninguna.
-5. **Grill:** semilla, rondas, tope, confirmación y merge según `ppr-comun.md`; árbol = solo rama abajo. Leer `teoria.md`; marcar cerrado/abierto en decisiones de promesa.
-6. **Evaluar:** fuentes y merge informe según `ppr-comun.md`; criterios abajo.
+5. **Grill:** semilla, rondas, tope, confirmación y merge según `comun.md`; árbol = solo rama abajo. Leer `teoria.md`; marcar cerrado/abierto en decisiones de promesa.
+6. **Evaluar:** fuentes y merge informe según `comun.md`; criterios abajo.
 
 ## Rama del grill
 
@@ -38,7 +38,7 @@ Tras confirmación: merge secciones `promesa` en `promesas.md`. Pregunta volcado
 
 ## Evaluar
 
-Leer `teoria.md` y checklist. Fuentes: `ppr-comun.md`.
+Leer `teoria.md` y checklist. Fuentes: `comun.md`.
 
 ### Cap N
 
@@ -60,4 +60,4 @@ Solo rama del grill o criterios de evaluación de este documento. Sin entrada, s
 
 ## No hacer
 
-Lo de `ppr-comun.md` más: no grillar progreso/recompensa en esta skill salvo delegado desde orquestadora con foco múltiple.
+Lo de `comun.md` más: no grillar progreso/recompensa en esta skill salvo delegado desde orquestadora con foco múltiple.

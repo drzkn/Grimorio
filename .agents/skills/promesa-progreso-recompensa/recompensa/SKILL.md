@@ -1,23 +1,23 @@
 ---
 name: ppr-recompensa
 description: >-
-  Pilar recompensa (Sanderson): pago directo, expansión, sustitución. Grill o
-  evaluar cap/relato. Triggers "recompensa", "recompensas", "grill de
-  recompensa", "evalúa recompensa". Varios pilares → orquestadora
+  Pilar recompensa (Sanderson, cap. La trama): pago directo, expansión,
+  sustitución. Grill o evaluar cap/relato. Triggers "recompensa", "recompensas",
+  "grill de recompensa", "evalúa recompensa". Varios pilares → orquestadora
   promesa-progreso-recompensa.
 ---
 
 # PPR — Recompensa
 
-Reglas compartidas: [ppr-comun.md](../ppr-comun.md). Teoría: [teoria.md](teoria.md).
+Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md).
 
 ## Flujo autónomo
 
 1. `iniciar-relato` si falta relato activo.
-2. Entrada en `ppr-comun.md` (proponer **Recompensa**). Si marcan más pilares → `promesa-progreso-recompensa` y parar.
-3. `foco` = {`recompensa`}. Comprobar dependencias (`ppr-comun.md`).
-4. **Grill:** semilla, rondas, tope, confirmación y merge según `ppr-comun.md`; árbol = solo rama abajo. Leer `teoria.md`.
-5. **Evaluar:** fuentes y merge informe según `ppr-comun.md`; criterios abajo.
+2. Entrada en `comun.md` (proponer **Recompensa**). Si marcan más pilares → orquestadora y parar.
+3. `foco` = {`recompensa`}. Comprobar dependencias (`comun.md`).
+4. **Grill:** semilla, rondas, tope, confirmación y merge según `comun.md`; árbol = solo rama abajo. Leer `teoria.md`.
+5. **Evaluar:** fuentes y merge informe según `comun.md`; criterios abajo.
 
 ## Rama del grill
 
@@ -37,7 +37,7 @@ Tras confirmación: merge columnas recompensa y estado en `promesas.md`. Pregunt
 
 ## Evaluar
 
-Leer `teoria.md` y checklist. Fuentes: `ppr-comun.md`.
+Leer `teoria.md` y checklist. Fuentes: `comun.md`.
 
 ### Cap N
 
@@ -59,4 +59,4 @@ Solo rama del grill o criterios de evaluación. Sin entrada, sin ficheros, sin N
 
 ## No hacer
 
-Lo de `ppr-comun.md` más: no grillar solo tono/arcos en esta skill salvo delegado multpilar.
+Lo de `comun.md` más: no grillar solo tono/arcos en esta skill salvo delegado multpilar.

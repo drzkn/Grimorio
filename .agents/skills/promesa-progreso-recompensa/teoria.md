@@ -1,6 +1,6 @@
 # Teoría: marco PPR
 
-Parafraseo cap. «La trama» (Sanderson). Detalle por pilar: `ppr-promesa/teoria.md`, `ppr-progreso/teoria.md`, `ppr-recompensa/teoria.md`.
+Parafraseo cap. «La trama» (Sanderson). Detalle por pilar: [promesa/teoria.md](promesa/teoria.md), [progreso/teoria.md](progreso/teoria.md), [recompensa/teoria.md](recompensa/teoria.md).
 
 ## Historia y ideas
 
