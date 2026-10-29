@@ -9,7 +9,7 @@ description: >-
 
 # PPR — Orquestadora
 
-Coordina promesa, progreso y recompensa. Reglas: [comun.md](comun.md). Marco: [teoria.md](teoria.md).
+Coordina promesa, progreso y recompensa. Reglas: [comun.md](comun.md). Marco: [teoria.md](teoria.md). Esquema y arquetipos: [construir-trama.md](construir-trama.md).
 
 Skills de pilar (misma carpeta):
 
