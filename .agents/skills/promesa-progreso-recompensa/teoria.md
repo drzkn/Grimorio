@@ -1,6 +1,6 @@
 # Teoría: marco PPR
 
-Parafraseo cap. «La trama» (Sanderson). Detalle por pilar: [promesa/teoria.md](promesa/teoria.md), [progreso/teoria.md](progreso/teoria.md), [recompensa/teoria.md](recompensa/teoria.md).
+Parafraseo cap. «La trama» (Sanderson). Detalle por pilar: [promesa/teoria.md](promesa/teoria.md), [progreso/teoria.md](progreso/teoria.md), [recompensa/teoria.md](recompensa/teoria.md). Esquema, arquetipos y caso *El Imperio Final* (cap. «Cómo crear una trama»): [construir-trama.md](construir-trama.md).
 
 ## Historia y ideas
 

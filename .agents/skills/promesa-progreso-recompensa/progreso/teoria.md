@@ -16,6 +16,7 @@ Pilar **más crítico** para que el lector llegue al final (muchos autores: medi
 - Cada escena avanza al menos un objetivo prometido.
 - **Pasos atrás** (Alderaan): breves, fluidos, reimpulso hacia meta.
 - **Anidamiento** (corchetes): paraguas ⊃ argumental ⊃ personaje ⊃ subtramas. Obras largas: más ciclos PPR.
+- Medir progreso en pasos del **arquetipo real** de cada trama (robo, aprendizaje, misterio, relación). Ver [construir-trama.md](../construir-trama.md).
 
 ## Fallos típicos
 
