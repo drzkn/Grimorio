@@ -18,6 +18,6 @@ Segundo factor de enganche (tras evitar volcados de información): dominar los t
 
 Orquestación: cerrar o leer promesas antes de planificar o auditar progreso y recompensa de un hilo. Varios pilares en una sesión: frontera grill en orden promesa → progreso → recompensa.
 
-**Esquema (`esquema.md`):** arquetipos, listas de pasos, trama núcleo — skill `ppr-trama`. **PPR por hilo (`promesas.md`):** promesa, progreso y recompensa operativos — pilares PPR.
+**Esquema (`esquema.md`):** arquetipos, listas de pasos, trama núcleo — skill `ppr-trama`. **POV** en `# Punto de vista` — `pov-elegir` / `pov-evaluar` ([punto-de-vista/teoria.md](punto-de-vista/teoria.md)). **PPR por hilo (`promesas.md`):** promesa, progreso y recompensa operativos — pilares PPR.
 
 Estados de hilo: `abierta` | `en progreso` | `pagada` | `rota`.

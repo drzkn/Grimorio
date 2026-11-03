@@ -20,6 +20,10 @@ Skills de pilar (misma carpeta):
 | progreso | `ppr-progreso` | [progreso/SKILL.md](progreso/SKILL.md) |
 | recompensa | `ppr-recompensa` | [recompensa/SKILL.md](recompensa/SKILL.md) |
 | esquema / arquetipos | `ppr-trama` | [trama/SKILL.md](trama/SKILL.md) |
+| POV (grill) | `pov-elegir` | [punto-de-vista/elegir/SKILL.md](punto-de-vista/elegir/SKILL.md) |
+| POV (auditar) | `pov-evaluar` | [punto-de-vista/evaluar/SKILL.md](punto-de-vista/evaluar/SKILL.md) |
+
+Teoría: [punto-de-vista/teoria.md](punto-de-vista/teoria.md). **No** entran en foco PPR.
 
 ## Cuándo usar esta skill
 
@@ -73,6 +77,7 @@ Al leer `promesa/SKILL.md`, `progreso/SKILL.md` o `recompensa/SKILL.md` desde aq
 |-------|-----|
 | `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` | Pilares; autónomas o delegadas |
 | `ppr-trama` | Esquema `esquema.md` antes o en paralelo; no entra en foco PPR |
+| `pov-elegir` / `pov-evaluar` | Cap. El punto de vista; fuera de PPR |
 | `sinopsis` | Volcado `## Promesas` si el escritor confirma |
 | `guarda-analisis` | Tras informe PPR |
 | `sugerencia-capitulos` | No invocar desde PPR |

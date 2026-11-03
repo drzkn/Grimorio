@@ -34,7 +34,7 @@ Pilar **más crítico** para que el lector llegue al final (muchos autores: medi
 
 - Dirección hacia algo que el lector **quiere ver**.
 - Lector elige **personaje favorito**; más peso al avanzar su línea.
-- Reparto junto al inicio: margen para capítulo desde PDV secundario que aún progresa trama principal.
+- Reparto junto al inicio: margen para capítulo desde POV secundario que aún progresa trama principal.
 
 ## Checklist (grill / evaluar)
 

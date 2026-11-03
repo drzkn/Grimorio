@@ -44,7 +44,7 @@ Leer [construir-trama.md](../construir-trama.md). Marcar cerrado/abierto. **Fron
 
 Rondas = formato `comun.md`. Frontera vacía → resumen → confirmación.
 
-Escribir `<ruta>/esquema.md` (plantilla abajo). Actualizar fechas. **No** escribir `sinopsis.md` ni `promesas.md`.
+Escribir `<ruta>/esquema.md` (plantilla abajo). Actualizar fechas. **No** reescribir `# Punto de vista` si ya existe (dueña `pov-elegir`). **No** escribir `sinopsis.md` ni `promesas.md`.
 
 Preguntar: «¿Siguiente paso?» — **PPR** de estas tramas (`recursor-escritura-creativa`) | **escaleta** (`sugerencia-capitulos`) | **parar**.
 
@@ -88,6 +88,16 @@ Arcos: …
 
 # Ambientación
 [Entradas breves o «ver contexto_global/…»]
+
+# Punto de vista
+**Modelo principal:** …
+**Persona / tiempo:** …
+**Historia marco:** …
+**Personajes POV:** …
+**Fiabilidad:** …
+**Ocultación:** [secreto → técnica]
+**Combinaciones:** …
+**Riesgos:** …
 
 # Trama
 ## [Trama 1 — arquetipo]
@@ -137,12 +147,15 @@ Arcos: …
 - Escribir `sinopsis.md`, `promesas.md`, `Roadmap` desde esta skill.
 - Repartir caps (solo ofrecer `sugerencia-capitulos`).
 - Entrar en pregunta de pilares PPR (orquestadora aparte).
+- Reescribir `# Punto de vista` en `esquema.md` (skill `pov-elegir`).
 
 ## Relación
 
 | Skill | Uso |
 |-------|-----|
 | `recursor-escritura-creativa` | Tras esquema, grill/evaluar PPR por trama |
+| `pov-elegir` | Sección `# Punto de vista` en `esquema.md` |
+| `pov-evaluar` | Auditar caps/relato; no modifica esquema |
 | `sugerencia-capitulos` | Tras esquema, escaleta cronológica |
 | `guarda-analisis` | Tras `analisis_trama.md` |
 | `sinopsis` | No escribir desde aquí |

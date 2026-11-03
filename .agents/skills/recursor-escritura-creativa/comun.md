@@ -1,14 +1,16 @@
 # PPR — reglas compartidas
 
-Carpeta [.agents/skills/recursor-escritura-creativa/](.). Origen: caps. «La trama» y «Cómo crear una trama» (Sanderson). Usar desde la orquestadora (`SKILL.md`), `promesa/`, `progreso/`, `recompensa/`, `trama/`. Respuesta al usuario en **español**.
+Carpeta [.agents/skills/recursor-escritura-creativa/](.). Origen: caps. «La trama» y «Cómo crear una trama» (Sanderson). Usar desde la orquestadora (`SKILL.md`), `promesa/`, `progreso/`, `recompensa/`, `trama/`, `punto-de-vista/`. Respuesta al usuario en **español**.
 
 ## Capas (no mezclar)
 
 | Path | Qué es |
 |------|--------|
 | `<ruta>/promesas.md` | Canon local: promesas, progreso planificado y recompensas por hilo |
-| `<ruta>/esquema.md` | Esquema Sanderson: personajes, ambientación, tramas por arquetipo (skill `ppr-trama`) |
+| `<ruta>/esquema.md` | Esquema Sanderson: personajes, ambientación, `# Punto de vista` (skill `pov-elegir`), tramas por arquetipo (skill `ppr-trama`) |
 | `<ruta>/analisis_trama.md` | Evaluación estructura / arquetipos del relato |
+| `<ruta>/analisis_pov.md` | Evaluación POV del relato entero |
+| `<ruta>/analisis_pov_cap{N}.md` | Evaluación POV del capítulo N |
 | Notion `Roadmap` + `<ruta>/sinopsis.md` | Plan de obra. `## Promesas` solo con confirmación explícita |
 | `<ruta>/analisis_ppr.md` | Evaluación PPR del relato entero |
 | `<ruta>/analisis_ppr_cap{N}.md` | Evaluación PPR del capítulo N |
@@ -221,5 +223,7 @@ La orquestadora fija `foco`, `alcance`, `camino`. La skill de pilar invocada en 
 | `sinopsis` | Roadmap; volcar `## Promesas` solo si el escritor confirma |
 | `guarda-analisis` | Tras informe PPR local |
 | `recursor-escritura-creativa` | Orquestadora (`SKILL.md` en esta carpeta) si foco tiene 2–3 pilares |
-| `ppr-trama` | Esquema y arquetipos (`trama/`); escribe `esquema.md` |
+| `ppr-trama` | Esquema y arquetipos (`trama/`); escribe `esquema.md` (no `# Punto de vista`) |
+| `pov-elegir` | Grill POV → sección `# Punto de vista` en `esquema.md` |
+| `pov-evaluar` | Informe `analisis_pov*.md` + `guarda-analisis` |
 | `chapter-editor` | Mismo criterio de localizar cap |

@@ -6,7 +6,7 @@ description: >-
   terminar chapter-editor, chapter-reader, fantasy-reader,
   recursor-escritura-creativa, promesa-progreso-recompensa, ppr-promesa,
   ppr-progreso,
-  ppr-recompensa, ppr-trama, o cuando el usuario
+  ppr-recompensa, ppr-trama, pov-evaluar, o cuando el usuario
   diga "sube el análisis", "guarda feedback en Notion", "guarda-analisis" o
   "sube todos los análisis".
 ---
@@ -86,6 +86,8 @@ Clave = texto del heading **sin fecha**. Match = `starts with` `## {clave}`.
 | PPR cap | `PPR — Cap {N}` | `<ruta>/analisis_ppr_cap{N}.md` | `Análisis — Cap {N}` |
 | PPR relato | `PPR — Relato` | `<ruta>/analisis_ppr.md` | `Análisis — Relato` |
 | trama relato | `Trama — Relato` | `<ruta>/analisis_trama.md` | `Análisis — Relato` |
+| POV cap | `POV — Cap {N}` | `<ruta>/analisis_pov_cap{N}.md` | `Análisis — Cap {N}` |
+| POV relato | `POV — Relato` | `<ruta>/analisis_pov.md` | `Análisis — Relato` |
 
 Fecha = día de la subida, `YYYY-MM-DD`.
 
@@ -165,3 +167,4 @@ Tras guardar el `.md` local, las skills de análisis **ejecutan esta skill** (un
 - `recursor-escritura-creativa` (alias `promesa-progreso-recompensa`) → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `PPR — Cap {N}` o `PPR — Relato`
 - `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` → mismo padre y toggle PPR que la orquestadora (informe compartido)
 - `ppr-trama` → padre `Análisis — Relato`, toggle `Trama — Relato`
+- `pov-evaluar` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `POV — Cap {N}` o `POV — Relato`

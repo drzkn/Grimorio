@@ -66,7 +66,7 @@ Lecciones:
 - **Una trama manda.** Plan inicial: robo como principal. Resultado: maestro-aprendiz = núcleo, porque casi todo el progreso sentido es Vin volviéndose nacida de la bruma (bailes, peleas, aprender metales). Robo pasa a trama B, con sus propias subtramas. Núcleo = dónde pasa el tiempo el lector; revisar si cambia al escribir.
 - **Trama de información:** libro miente al inicio sobre el pasado del Legislador, luego insinúa que es mentira contada a los personajes, siembra pistas, cobra sentido al final.
 - **Tramas cosidas:** la pieza que falta en el plan del robo es algo que Kelsier no sabe al 100 %. La trama de información la contesta: lector que resuelve el misterio sabe qué falta en el robo. Buscar que una trama resuelva el hueco de otra.
-- **Ocultar desde PDV:** Kelsier es personaje de punto de vista y aun así esconde cosas al resto (estilo *Ocean's*). Funciona, pero exige «un poco de trampa»; justificarla.
+- **Ocultar desde el POV:** Kelsier es personaje de punto de vista y aun así esconde cosas al resto (estilo *Ocean's*). Funciona, pero exige «un poco de trampa»; justificarla. Modelos y checklist: [punto-de-vista/teoria.md](punto-de-vista/teoria.md).
 
 Aplicar a obra propia: listar 3–5 tramas, nombrar arquetipo de cada una, fijar núcleo, buscar costuras entre tramas.
 
@@ -77,7 +77,7 @@ Aplicar a obra propia: listar 3–5 tramas, nombrar arquetipo de cada una, fijar
 Común: reunir equipo + novato al que explicar + **exponer problema** como lista de imposibles (escena Clooney/Pitt = promesa muy bien hecha; no copiar la forma). Progreso: atacar piezas una a una; éxito o fallo → replan. Tensión: lector sabe que algo fallará porque se anticipa («esto aún no lo tenemos», «han movido el objetivo»). Recompensa: lograrlo pese a contratiempos.
 
 - **Tipo *Ocean's Eleven*:** falta una pieza; novato pregunta, «tú no te preocupes» → fatalidad. Giro: plan ya lo cubría, ocultado al novato y al público. Requiere ocultar al lector.
-- **Tipo *Italian Job*:** problemas A–D con soluciones 1–4; al final los problemas son E–H (objetivo trasladado). Improvisan recombinando soluciones (caja fuerte → robar coche). **Clave:** preparación debe seguir siendo relevante; si 1–4 se vuelven inútiles, tiras ~80 % de la experiencia del lector (el progreso) y se enfada. Giro + sentido del tiempo invertido = final satisfactorio. Mejor con varios PDV al mando (no hay que esconder nada).
+- **Tipo *Italian Job*:** problemas A–D con soluciones 1–4; al final los problemas son E–H (objetivo trasladado). Improvisan recombinando soluciones (caja fuerte → robar coche). **Clave:** preparación debe seguir siendo relevante; si 1–4 se vuelven inútiles, tiras ~80 % de la experiencia del lector (el progreso) y se enfada. Giro + sentido del tiempo invertido = final satisfactorio. Mejor con varios POV al mando (no hay que esconder nada).
 - **Irrumpir y agarrar:** tercer arquetipo (*Infinity War*).
 - Atractivos: salirse con la suya, competencia extrema, rompecabezas, rebeldía contra el poder, triunfo en lo imposible.
 
@@ -115,7 +115,7 @@ Sin cita, no marcar fallo.
 - [ ] ¿Algún giro que cambia problemas reutiliza la preparación previa?
 - [ ] ¿Misterios resolubles con pistas dadas?
 - [ ] ¿Tramas cosidas (una contesta el hueco de otra)?
-- [ ] ¿Ocultación desde PDV justificada?
+- [ ] ¿Ocultación desde el POV justificada?
 
 ---
 
@@ -192,7 +192,7 @@ Referencias adicionales: *¡Salva al gato!* (interés del espectador); estructur
 ## Cuando la historia no funciona
 
 - **Principiante, bloqueo:** terminar borrador; misión = volverse escritor capaz, no una novela perfecta.
-- **Experiencia:** seguir 1–2 caps; a menudo rehacer cap problemático (PDV, revelación) al día siguiente.
+- **Experiencia:** seguir 1–2 caps; a menudo rehacer cap problemático (POV, revelación) al día siguiente.
 - **Problema grave:** descomponer — motivaciones, promesas, arquetipo y trayectoria, ritmo. A veces tarda años (*El camino de los reyes* 2002→2010; libros sin arreglo claro también existen).
 
 ## Checklist ampliado (grill / evaluar estructura)
