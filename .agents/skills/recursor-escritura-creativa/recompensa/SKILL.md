@@ -4,12 +4,12 @@ description: >-
   Pilar recompensa (Sanderson, cap. La trama): pago directo, expansión,
   sustitución. Grill o evaluar cap/relato. Triggers "recompensa", "recompensas",
   "grill de recompensa", "evalúa recompensa". Varios pilares → orquestadora
-  promesa-progreso-recompensa.
+  recursor-escritura-creativa.
 ---
 
 # PPR — Recompensa
 
-Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md).
+Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md). Giros: [construir-trama.md](../construir-trama.md).
 
 ## Flujo autónomo
 
@@ -29,7 +29,7 @@ Por cada promesa / hilo fijado:
 4. **Se paga en** (tramo / cap / final).
 5. Estado del hilo al cerrar.
 
-Riesgos: sustitución sin preparar, expansión que contradice promesa, huérfanas, pago que no deriva del progreso mostrado.
+Riesgos: sustitución sin preparar, expansión que contradice promesa, huérfanas, pago que no deriva del progreso mostrado, **giro que invalida preparación** (tipo objetivo movido sin recombinar soluciones), **convergencia débil en clímax**.
 
 Frontera: no redefinir tono ni hitos salvo lo necesario para el pago.
 
@@ -50,6 +50,7 @@ Leer `teoria.md` y checklist. Fuentes: `comun.md`.
 - Tipo de cada pago (directa / expansión / sustitución).
 - ¿Deriva del progreso?
 - Promesas rotas u huérfanas.
+- Giros: propósito, ampliar/recrudecer; clímax converge tramas.
 
 Nota /10. Guardar sección `## Recompensa` + `guarda-analisis`.
 
