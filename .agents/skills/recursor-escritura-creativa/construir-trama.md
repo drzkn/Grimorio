@@ -116,3 +116,94 @@ Sin cita, no marcar fallo.
 - [ ] ¿Misterios resolubles con pistas dadas?
 - [ ] ¿Tramas cosidas (una contesta el hueco de otra)?
 - [ ] ¿Ocultación desde PDV justificada?
+
+---
+
+## Planificar hacia atrás (por trama)
+
+En la sección `# Trama` del esquema, **arriba el objetivo final** + párrafo de por qué satisface con ese arquetipo. **Debajo**, lista de pasos de principio a fin (ideas, no escenas escritas).
+
+**Relación:** A competente con carencia; B fuerte donde A falla; conflicto que impide unirse de inmediato (Montesco/Capuleto); pasos como «escena en que colaboran». **Rosas entretejidas** (Farland): espinas chocan al inicio; al final apuntan hacia fuera contra quien amenace la relación. Pasos pueden ser «A ve a B con la hermana → admira su capacidad de cuidar» sin saber aún la escena.
+
+**Misterio:** cabecera «Descubrir X» + por qué la revelación será potente (*Elantris*: Raoden y la magia rota). Debajo: pistas, pistas falsas, cómo se relacionan.
+
+Repetir bloque objetivo + pasos **por cada trama** del libro. Luego arcos de personaje (listas similares) cuando ya hay tramas decididas.
+
+## De listas a escaleta cronológica
+
+- El esquema Sanderson queda **ordenado por secciones** (personajes / ambientación / trama por arquetipo), **no** por orden de caps.
+- Al escribir: recombinar elementos de distintas listas en cada capítulo («cap 1 = paso relación X + pista misterio Y»).
+- Escaleta cronológica conjunta se construye **mientras escribes**, no dentro de cada subapartado de trama.
+- Sesión diaria: «escena que consiga A, B y C» → foco en escena activa, conflicto, escenario.
+
+## Cuántas tramas
+
+- Más extensión → más tramas, sin regla 1:1.
+- **Mínimo novela:** 1 arquetipo principal + 1 arco de personaje + 1 subtrama arquetípica (*Escuadrón*: chico/huevo de dragón con nave espacial + relación + arco heroísmo vs realidad).
+- **Obras corales / épica:** al menos **un arquetipo muy reconocible** como columna (Kaladin, deportista en desventaja). Sin eso, sensación de revoltijo (*El camino de los reyes* 2002 falló así; 2010 funcionó con columna).
+- Alternativa válida: sucesión de «explosiones» hasta que la última sale bien (más descubrimiento).
+
+## Varias líneas en obras largas
+
+- **«Robert Jordan»:** cortar cada trama en clímax intermedio satisfactorio (o un solo gancho memorable); puede desaparecer un libro entero; lector recuerda **una cosa**.
+- **Secuencial:** una trama domina un tramo (relación al inicio); separación → echar de menos; entremezclar con la siguiente.
+- **Híbrido:** clímax intermedio por línea + hilo conductor (Kaladin en *El camino de los reyes*); mover hitos clave **antes** de una separación larga.
+- Planificación: imaginar **últimas escenas** de cada línea antes de escribir.
+
+## Originalidad y catálogo de arquetipos
+
+- Pitch: **atractor extraño**, una idea distintiva. Ejecución (personaje emotivo, etc.) vende el libro; convencer editor = arte aparte.
+- Original en trama/personaje es fácil pero **poco satisfactorio** para el lector; ficción popular reutiliza tipos que funcionan. Originalidad fuerte en **ambientación** si el personaje es identificable (Pixar).
+- **No hay lista universal** de arquetipos: crear la propia al ver cine/series (Marvel: *Soldado de invierno* = thriller espías; *Ant-Man* = comedia de robo; *Thor* = fantasía épica).
+- **Duplicar arquetipo:** desarrollo opuesto (*Orgullo y prejuicio*: relación que parece bien y falla vs la que parece mal y triunfa).
+- **Alargar:** minirrobos de **estilo distinto** que alimenten el golpe final (*Origen*).
+
+## Estructuras clásicas
+
+**Estructura** = andamiaje; **arquetipo** = emoción. Ceñirse demasiado a la estructura añade piezas que no encajan (parto virginal de Anakin).
+
+### Periplo del héroe (Campbell)
+
+Rechazo → umbral → iniciación (mentor que desaparece, compañeros) → descenso al inframundo (punto más bajo) → apoteosis / expiación → elixir → regreso cambiado. Útil como **sucesión de momentos satisfactorios** = pasos de progreso (paso a edad adulta). Leer con criterio; no todo encaja.
+
+### Tres actos
+
+1. **Fin acto 1:** protagonista deja de ser reactivo → «voy a hacer esto» (Star Wars: varios candidatos: marcharse con Obi-Wan, despegue, decisión rescatar princesa).
+2. **Punto medio acto 2:** giro que sube lo en juego o empeora al villano.
+3. **Ciclos prueba-error** (Farland): intento → fracaso → empeora → repetir hasta **punto más bajo** → última opción → clímax → desenlace.
+4. **Convergencia:** clímax donde se cruzan tramas (Han vuelve cuando Luke confía en la Fuerza).
+
+Referencias adicionales: *¡Salva al gato!* (interés del espectador); estructura de siete puntos (Dan Wells).
+
+## Escritura de descubrimiento
+
+- King, Martin (jardinero vs arquitecto).
+- **«Sí, pero / No, y»** (Kowal): situación mala → acción razonable → sí **pero** nuevo problema, o no **y** problema crece. Mantiene tensión.
+- Tras borrador: revisar si encaja en trama envolvente; presagiar; envolver.
+
+## Giros argumentales
+
+- Preguntar **qué emoción** añade el giro y **para qué** (muertes tempranas en *Juego de tronos* = tensión «nadie a salvo»).
+- **Romper promesas no es virtud:** giro al 75 % tras prometer otro libro aburre a quien quería eso y frustra a quien quería la subversión sin llegar.
+- Preferir **ampliar** o **recrudecer** (Vader padre: presagiado, expande conflicto Luke–Obi-Wan) antes que derruir.
+- **Recrudecimiento** ≈ función del giro (ruptura ~3/4 en romcom: espinas visibles desde el inicio).
+- Final **satisfactorio** > final con giro forzado. Giro grato > ambos. *Into the Woods*: excepción (deconstrucción como satisfacción meta).
+
+## Cuando la historia no funciona
+
+- **Principiante, bloqueo:** terminar borrador; misión = volverse escritor capaz, no una novela perfecta.
+- **Experiencia:** seguir 1–2 caps; a menudo rehacer cap problemático (PDV, revelación) al día siguiente.
+- **Problema grave:** descomponer — motivaciones, promesas, arquetipo y trayectoria, ritmo. A veces tarda años (*El camino de los reyes* 2002→2010; libros sin arreglo claro también existen).
+
+## Checklist ampliado (grill / evaluar estructura)
+
+Además de los ítems anteriores:
+
+- [ ] ¿Mínimo novela: arquetipo + arco + subtrama arquetípica (si aplica extensión)?
+- [ ] ¿Columna reconocible en obra coral?
+- [ ] ¿Pasos de al menos un arquetipo generan ilusión de avance?
+- [ ] ¿Giros con propósito emocional (ampliar/recrudecer)?
+- [ ] ¿Líneas largas no desaparecen sin cierre intermedio o gancho único?
+- [ ] ¿Convergencia o costuras en el clímax?
+- [ ] ¿Estructura (3 actos / héroe) sirve de andamiaje sin piezas forzadas?
+

@@ -1,12 +1,14 @@
 # PPR — reglas compartidas
 
-Carpeta [.agents/skills/promesa-progreso-recompensa/](.). Origen: cap. «La trama» (Sanderson). Usar desde la orquestadora (`SKILL.md`) y desde `promesa/`, `progreso/`, `recompensa/`. Respuesta al usuario en **español**.
+Carpeta [.agents/skills/recursor-escritura-creativa/](.). Origen: caps. «La trama» y «Cómo crear una trama» (Sanderson). Usar desde la orquestadora (`SKILL.md`), `promesa/`, `progreso/`, `recompensa/`, `trama/`. Respuesta al usuario en **español**.
 
 ## Capas (no mezclar)
 
 | Path | Qué es |
 |------|--------|
 | `<ruta>/promesas.md` | Canon local: promesas, progreso planificado y recompensas por hilo |
+| `<ruta>/esquema.md` | Esquema Sanderson: personajes, ambientación, tramas por arquetipo (skill `ppr-trama`) |
+| `<ruta>/analisis_trama.md` | Evaluación estructura / arquetipos del relato |
 | Notion `Roadmap` + `<ruta>/sinopsis.md` | Plan de obra. `## Promesas` solo con confirmación explícita |
 | `<ruta>/analisis_ppr.md` | Evaluación PPR del relato entero |
 | `<ruta>/analisis_ppr_cap{N}.md` | Evaluación PPR del capítulo N |
@@ -33,7 +35,7 @@ Sesión:
 
 ### Skill de pilar con varios pilares marcados
 
-Si el usuario invocó `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` (carpeta `promesa/` / `progreso` / `recompensa/`) y marca **más de un** pilar: delegar a orquestadora `promesa-progreso-recompensa` con ese foco y alcance; no continuar en la skill de pilar.
+Si el usuario invocó `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` (carpeta `promesa/` / `progreso` / `recompensa/`) y marca **más de un** pilar: delegar a orquestadora `recursor-escritura-creativa` con ese foco y alcance; no continuar en la skill de pilar.
 
 ### Pilares fuera del foco
 
@@ -53,10 +55,11 @@ Grill con varios pilares: frontera en orden **promesa → progreso → recompens
 Orden:
 
 1. `<ruta>/promesas.md` si existe.
-2. `sinopsis.md` tras volcar `Roadmap` (skill `sinopsis`; solo traer).
-3. `contexto_global/`, caps del relato.
-4. Mensaje del escritor si no hay local.
-5. Sin semilla: una pregunta («pega premisa o qué prometes al lector») y parar.
+2. `<ruta>/esquema.md` si existe.
+3. `sinopsis.md` tras volcar `Roadmap` (skill `sinopsis`; solo traer).
+4. `contexto_global/`, caps del relato.
+5. Mensaje del escritor si no hay local.
+6. Sin semilla: una pregunta («pega premisa o qué prometes al lector») y parar.
 
 Hechos escritos: buscar, no preguntar al escritor.
 
@@ -64,7 +67,7 @@ Hechos escritos: buscar, no preguntar al escritor.
 
 - Cap: texto del cap (como `chapter-editor`: `capitulo_N.md`, `capN.md`, sección en `contenido.md`).
 - Relato: caps disponibles + `contexto_global/` si existe.
-- `promesas.md`, `sinopsis.md` si existen.
+- `promesas.md`, `sinopsis.md`, `esquema.md` si existen.
 - `contexto_global/capitulos/<N>.md` cuando aplique.
 
 Sin cita del texto o del plan, no hay hallazgo. No modificar `promesas.md` en evaluar sin permiso.
@@ -91,7 +94,7 @@ Frontera = decisiones abiertas cuyas previas están cerradas. Una ronda = fronte
 
 | Pilar en foco | Secciones / columnas que puede reescribir |
 |---------------|-------------------------------------------|
-| `promesa` | `## Tono`, `## Arcos de personaje`, `## Trama`, `## Anidamiento`; columnas Tipo promesa, Se abre en; filas nuevas de hilos |
+| `promesa` | `## Tono`, `## Arcos de personaje`, `## Trama`, `## Anidamiento`; columnas Arquetipo, Tipo promesa, Se abre en; filas nuevas de hilos |
 | `progreso` | Columnas Progreso (hitos), Pasos atrás; `## Notas de riesgo` (riesgos de progreso) |
 | `recompensa` | Columnas Recompensa (tipo), Se paga en, Estado; `## Notas de riesgo` (riesgos de pago) |
 
@@ -130,15 +133,16 @@ Skills `promesa/` y `recompensa/` pueden disparar esta pregunta en modo autónom
 ## Trama
 - **Paraguas:** [estructura visible]
 - **Nuclear:** [lo que de verdad importa al lector]
+- **Núcleo:** [trama donde pasa más tiempo el lector; coherente con esquema.md si existe]
 
 ## Anidamiento
 [Corchetes: paraguas ⊃ argumental ⊃ personaje ⊃ subtramas. Qué cierra en qué tramo.]
 
 ## Hilos (promesa → progreso → recompensa)
 
-| Hilo | Tipo promesa | Se abre en | Progreso (hitos) | Pasos atrás | Recompensa (tipo) | Se paga en | Estado |
-|------|--------------|------------|------------------|-------------|-------------------|------------|--------|
-| ... | tono / arco / trama | cap / acto | ... | ... | directa / expansión / sustitución | ... | abierta / en progreso / pagada / rota |
+| Hilo | Arquetipo | Tipo promesa | Se abre en | Progreso (hitos) | Pasos atrás | Recompensa (tipo) | Se paga en | Estado |
+|------|-----------|--------------|------------|------------------|-------------|-------------------|------------|--------|
+| ... | robo / relación / … | tono / arco / trama | cap / acto | ... | ... | directa / expansión / sustitución | ... | abierta / en progreso / pagada / rota |
 
 ## Notas de riesgo
 - [minipromesas, subtramas, sustitución…]
@@ -216,5 +220,6 @@ La orquestadora fija `foco`, `alcance`, `camino`. La skill de pilar invocada en 
 | `iniciar-relato` | Primero si falta relato activo |
 | `sinopsis` | Roadmap; volcar `## Promesas` solo si el escritor confirma |
 | `guarda-analisis` | Tras informe PPR local |
-| `promesa-progreso-recompensa` | Orquestadora (`SKILL.md` en esta carpeta) si foco tiene 2–3 pilares |
+| `recursor-escritura-creativa` | Orquestadora (`SKILL.md` en esta carpeta) si foco tiene 2–3 pilares |
+| `ppr-trama` | Esquema y arquetipos (`trama/`); escribe `esquema.md` |
 | `chapter-editor` | Mismo criterio de localizar cap |

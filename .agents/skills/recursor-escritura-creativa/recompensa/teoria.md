@@ -1,6 +1,6 @@
 # Teoría: recompensa
 
-Parafraseo cap. «La trama» (Sanderson). No copiar literal al chat ni a informes.
+Parafraseo caps. «La trama» y «Cómo crear una trama» (Sanderson). No copiar literal al chat ni a informes.
 
 Cumplir lo prometido. No siempre al pie de la letra.
 
@@ -16,6 +16,16 @@ Apuesta habitual: **cochecito + avión**. Recompensa **deriva del progreso**; su
 
 Tercer acto clásico: imposible → inspiración/dato → éxito y pago.
 
+## Giros (recompensa y clímax)
+
+Detalle en [construir-trama.md](../construir-trama.md). Resumen:
+
+- Cada giro: **qué emoción** añade y **para qué**.
+- Preferir **ampliar** o **recrudecer** (Vader padre) antes que derruir promesas al 75 %.
+- Giro tipo *Italian Job*: nueva situación pero **reutiliza** preparación previa.
+- **Convergencia:** varias tramas pagan juntas en el clímax (Han + Luke).
+- Final satisfactorio > giro sorpresa vacío. Recrudecimiento (~3/4 romcom) cumple función de giro.
+
 ## Estados de hilo
 
 `abierta` | `en progreso` | `pagada` | `rota` (incumplida sin intención artística clara)
@@ -28,3 +38,5 @@ Sin cita, no marcar fallo.
 - [ ] ¿Pago merecido por el progreso mostrado?
 - [ ] ¿Promesas huérfanas?
 - [ ] Si sustitución, ¿lector guiado a desear el nuevo resultado?
+- [ ] ¿Giros amplían o recrudecen sin invalidar el tiempo del lector?
+- [ ] ¿Clímax converge tramas principales?

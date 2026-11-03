@@ -4,8 +4,9 @@ description: >-
   Espeja análisis de lectura y edición en Notion: una fila de Revisiones por
   capítulo («Análisis — Cap N»), cada informe en un toggle heading. Úsalo al
   terminar chapter-editor, chapter-reader, fantasy-reader,
-  promesa-progreso-recompensa, ppr-promesa, ppr-progreso o
-  ppr-recompensa, o cuando el usuario
+  recursor-escritura-creativa, promesa-progreso-recompensa, ppr-promesa,
+  ppr-progreso,
+  ppr-recompensa, ppr-trama, o cuando el usuario
   diga "sube el análisis", "guarda feedback en Notion", "guarda-analisis" o
   "sube todos los análisis".
 ---
@@ -84,6 +85,7 @@ Clave = texto del heading **sin fecha**. Match = `starts with` `## {clave}`.
 | lectura relato | `Lectura aficionado — Relato` | `<ruta>/lectura/aficionado.md` | `Análisis — Relato` |
 | PPR cap | `PPR — Cap {N}` | `<ruta>/analisis_ppr_cap{N}.md` | `Análisis — Cap {N}` |
 | PPR relato | `PPR — Relato` | `<ruta>/analisis_ppr.md` | `Análisis — Relato` |
+| trama relato | `Trama — Relato` | `<ruta>/analisis_trama.md` | `Análisis — Relato` |
 
 Fecha = día de la subida, `YYYY-MM-DD`.
 
@@ -111,6 +113,7 @@ Página `Análisis — Relato`:
 1. `Lectura beta — Relato`
 2. `Lectura aficionado — Relato`
 3. `PPR — Relato`
+4. `Trama — Relato`
 
 Al insertar uno nuevo, colocarlo según esa lista (después del anterior existente, antes del siguiente). No reordenar el resto.
 
@@ -159,5 +162,6 @@ Tras guardar el `.md` local, las skills de análisis **ejecutan esta skill** (un
 - `chapter-editor` → padre `Análisis — Cap {N}`, toggle `Edición — Cap {N}`
 - `chapter-reader` → padre `Análisis — Cap {N}`, toggle `Lectura {modo} — Cap {N}`
 - `fantasy-reader` → padre `Análisis — Relato`, toggle `Lectura {modo} — Relato`
-- `promesa-progreso-recompensa` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `PPR — Cap {N}` o `PPR — Relato`
+- `recursor-escritura-creativa` (alias `promesa-progreso-recompensa`) → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `PPR — Cap {N}` o `PPR — Relato`
 - `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` → mismo padre y toggle PPR que la orquestadora (informe compartido)
+- `ppr-trama` → padre `Análisis — Relato`, toggle `Trama — Relato`

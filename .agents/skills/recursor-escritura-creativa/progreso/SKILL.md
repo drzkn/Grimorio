@@ -4,12 +4,12 @@ description: >-
   Pilar progreso (Sanderson, cap. La trama): ilusión de avance, hitos,
   subtramas, ganchos. Grill o evaluar cap/relato. Triggers "progreso", "grill
   de progreso", "page turner", "evalúa progreso". Varios pilares →
-  orquestadora promesa-progreso-recompensa.
+  orquestadora recursor-escritura-creativa.
 ---
 
 # PPR — Progreso
 
-Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md).
+Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md). Arquetipos: [construir-trama.md](../construir-trama.md).
 
 ## Flujo autónomo
 
@@ -24,11 +24,12 @@ Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md).
 Por cada promesa ya fijada (en semilla o cerrada en la misma sesión si hubo ronda mínima de promesas):
 
 1. Preguntas principales que mantienen al lector.
-2. Hitos de avance por tramo / cap.
+2. **Pasos del arquetipo real** (lista del esquema o deducida) por tramo / cap.
 3. Qué escena o beat avanza qué objetivo.
 4. Pasos atrás previstos (breves).
 5. Ganchos de fin de capítulo (legítimos vs débiles).
 6. Subtramas: motivación y conexión con principal; riesgo desvío.
+7. **Ciclos prueba-error** y cierres intermedios antes de pausar una línea.
 
 Riesgos: minipromesa accidental, tramo que parece misión secundaria, reparto separado sin PPR propio, escenas muertas.
 
@@ -50,6 +51,7 @@ Leer `teoria.md` y checklist. Fuentes: `comun.md`.
 
 - Hilos estancados; subtramas-desvío.
 - Anidamiento; sensación page-turner global.
+- Líneas que desaparecen sin cierre intermedio.
 
 Nota /10. Ante desvío Shadesmar: proponer cambio de promesa antes que reescribir viaje. Guardar sección `## Progreso` + `guarda-analisis`.
 

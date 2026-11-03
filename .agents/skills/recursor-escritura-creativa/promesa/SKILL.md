@@ -4,17 +4,17 @@ description: >-
   Pilar promesa (Sanderson, cap. La trama): tono, arco, trama paraguas/nuclear.
   Grill o evaluar cap/relato. Triggers "promesa", "promesas", "grill de
   promesas", "tono de la historia", "evalúa promesas". Varios pilares →
-  orquestadora promesa-progreso-recompensa.
+  orquestadora recursor-escritura-creativa.
 ---
 
 # PPR — Promesa
 
-Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md).
+Reglas compartidas: [comun.md](../comun.md). Teoría: [teoria.md](teoria.md). Arquetipos: [construir-trama.md](../construir-trama.md).
 
 ## Flujo autónomo
 
 1. `iniciar-relato` si falta relato activo.
-2. Entrada en `comun.md` (proponer **Promesa** en el enunciado). Si marcan más pilares → orquestadora `promesa-progreso-recompensa` y parar.
+2. Entrada en `comun.md` (proponer **Promesa** en el enunciado). Si marcan más pilares → orquestadora `recursor-escritura-creativa` y parar.
 3. `foco` = {`promesa`}. `camino` grill o evaluar.
 4. Dependencias: ninguna.
 5. **Grill:** semilla, rondas, tope, confirmación y merge según `comun.md`; árbol = solo rama abajo. Leer `teoria.md`; marcar cerrado/abierto en decisiones de promesa.
@@ -26,11 +26,11 @@ Decisiones abiertas (orden interno):
 
 1. Tono de la presentación y coherencia con género.
 2. Por protagonista: arco (deseo / obstáculo) o emblemático.
-3. Trama paraguas y nuclear; qué señalas al lector primero.
+3. Trama paraguas y nuclear; **arquetipo** de cada hilo; **trama núcleo** (leer `esquema.md` si existe).
 4. Anidamiento (corchetes) y minipromesas tempranas.
 5. Por hilo: tipo de promesa, **se abre en** (tramo).
 
-Riesgos a señalar: tono contradictorio, presentación larga, cliché sin impacto, ruptura de promesa, arco prometido y no emblemático.
+Riesgos a señalar: tono contradictorio, presentación larga, cliché sin impacto, ruptura de promesa, arco prometido y no emblemático, **apertura que promete arquetipo distinto al núcleo real**.
 
 Frontera: solo huecos de promesa. No preguntar hitos de progreso ni tipo de recompensa (otras skills / otra sesión).
 
@@ -51,6 +51,7 @@ Leer `teoria.md` y checklist. Fuentes: `comun.md`.
 - Mapa apertura → cierre de promesas.
 - Huérfanas en plan o texto.
 - Tono inicial vs cuerpo; presentación demasiado larga.
+- ¿Apertura promete el **arquetipo real** (vs paraguas engañoso)?
 
 Nota /10. Hallazgos y propuestas. Guardar informe (solo sección `## Promesa`) + `guarda-analisis`.
 
