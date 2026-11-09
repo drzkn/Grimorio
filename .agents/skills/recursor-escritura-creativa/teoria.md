@@ -1,6 +1,6 @@
 # Teoría: marco PPR
 
-Parafraseo caps. «La trama» y «Cómo crear una trama» (Sanderson). Detalle por pilar: [promesa/teoria.md](promesa/teoria.md), [progreso/teoria.md](progreso/teoria.md), [recompensa/teoria.md](recompensa/teoria.md). Esquema, arquetipos, estructuras: [construir-trama.md](construir-trama.md). Skill de esquema: `ppr-trama` ([trama/SKILL.md](trama/SKILL.md)).
+Parafraseo caps. «La trama» y «Cómo crear una trama» (Sanderson). Detalle por pilar: [promesa/teoria.md](promesa/teoria.md), [progreso/teoria.md](progreso/teoria.md), [recompensa/teoria.md](recompensa/teoria.md). Esquema, arquetipos, estructuras: [construir-trama.md](construir-trama.md). Skill de esquema: `ppr-trama` ([trama/SKILL.md](trama/SKILL.md)). Magia: [leyes-magia/](leyes-magia/).
 
 ## Historia y ideas
 
