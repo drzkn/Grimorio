@@ -2,8 +2,10 @@
 name: magia-ley-cero
 description: >-
   Ley cero de Sanderson (cap. Las leyes de la magia): decantarse por lo
-  impresionante. Grill o evaluar la semilla visual del sistema. Triggers
-  "ley cero", "impresionante", "imagen de magia", "semilla del sistema".
+  impresionante. Grill o evaluar la semilla visual del sistema. Valora
+  espectacularidad 1–10; si nota ≤7, sugiere ideas para subirla. Triggers
+  "ley cero", "impresionante", "espectacular", "espectacularidad",
+  "valora lo espectacular", "imagen de magia", "semilla del sistema".
   Varias leyes → orquestadora leyes-magia.
 ---
 
@@ -36,19 +38,24 @@ Tras confirmación: merge `## Impresionante` y semilla de `## Poderes` en `siste
 
 ## Evaluar
 
-Leer `teoria.md` y checklist. Fuentes: `comun.md`.
+Leer `teoria.md` y checklist. Fuentes: `comun.md`. Petición de **espectacularidad** de la historia (sin nombrar magia): mismo camino; alcance relato salvo que pidan un cap.
 
 ### Cap N
 
 - ¿El cap muestra o refuerza la imagen impresionante (cita)?
-- ¿La magia en escena sirve a esa imagen o la diluye?
+- ¿La magia (o el set piece) en escena sirve a esa imagen o la diluye?
 
 ### Relato
 
-- ¿El sistema nace de una imagen clara?
+- ¿El sistema / la historia nace de una imagen clara que se quiere *ver*?
 - ¿Las reglas (plan o texto) apagan esa imagen?
 
-Nota /10. Hallazgos y propuestas. Guardar informe (solo sección `## Ley cero`) + `guarda-analisis`.
+**Nota de espectacularidad /10** (rúbrica en `teoria.md`). Decir la nota al escritor, con cita.
+
+- **≤ 7:** no pasa. En `### Propuestas` (y en el chat): **ideas concretas** para subir la imagen — set pieces, giros de la semilla, trabajar hacia atrás desde un momento que sí impresione. 3–6 ideas ancladas al texto/plan, no un catálogo genérico. Ofrecer grill de Ley cero para fijar una.
+- **≥ 8:** pasa. Hallazgos; ideas solo si el escritor las pide.
+
+Guardar informe (solo sección `## Ley cero`) + `guarda-analisis`.
 
 ## Modo delegado
 
