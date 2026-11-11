@@ -1,6 +1,6 @@
 # PPR — reglas compartidas
 
-Carpeta [.agents/skills/recursor-escritura-creativa/](.). Origen: caps. «La trama» y «Cómo crear una trama» (Sanderson). Usar desde la orquestadora (`SKILL.md`), `promesa/`, `progreso/`, `recompensa/`, `trama/`. Respuesta al usuario en **español**.
+Carpeta [.agents/skills/recursor-escritura-creativa/](.). Pack del curso de escritura creativa (Sanderson). Este `comun.md`: caps. «La trama» y «Cómo crear una trama». Magia: [leyes-magia/](leyes-magia/). Usar desde la orquestadora (`SKILL.md`), `promesa/`, `progreso/`, `recompensa/`, `trama/`. Respuesta al usuario en **español**.
 
 ## Capas (no mezclar)
 
@@ -222,4 +222,5 @@ La orquestadora fija `foco`, `alcance`, `camino`. La skill de pilar invocada en 
 | `guarda-analisis` | Tras informe PPR local |
 | `recursor-escritura-creativa` | Orquestadora (`SKILL.md` en esta carpeta) si foco tiene 2–3 pilares |
 | `ppr-trama` | Esquema y arquetipos (`trama/`); escribe `esquema.md` |
+| `leyes-magia` | Sistema de magia (`leyes-magia/`); no entra en foco PPR |
 | `chapter-editor` | Mismo criterio de localizar cap |

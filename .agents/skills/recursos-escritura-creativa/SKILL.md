@@ -10,6 +10,8 @@ description: >-
 
 # PPR — Orquestadora
 
+Pack del curso: esta carpeta. PPR aquí. Magia: [leyes-magia/](leyes-magia/).
+
 Coordina promesa, progreso y recompensa. Reglas: [comun.md](comun.md). Marco: [teoria.md](teoria.md). Esquema y arquetipos: [construir-trama.md](construir-trama.md).
 
 Skills de pilar (misma carpeta):
@@ -73,6 +75,7 @@ Al leer `promesa/SKILL.md`, `progreso/SKILL.md` o `recompensa/SKILL.md` desde aq
 |-------|-----|
 | `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` | Pilares; autónomas o delegadas |
 | `ppr-trama` | Esquema `esquema.md` antes o en paralelo; no entra en foco PPR |
+| `leyes-magia` | Pack hermano en esta carpeta; no entra en foco PPR |
 | `sinopsis` | Volcado `## Promesas` si el escritor confirma |
 | `guarda-analisis` | Tras informe PPR |
 | `sugerencia-capitulos` | No invocar desde PPR |
