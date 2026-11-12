@@ -27,7 +27,7 @@ Skills de pilar (misma carpeta):
 - Petición genérica («trabaja PPR») sin skill de pilar concreta.
 - Usuario invocó un pilar y marcó **más de un** pilar en la pregunta de entrada.
 
-**No** usar para esquema de trama → `ppr-trama`.
+**No** usar para esquema de trama → `ppr-trama`. **No** usar para ambientación / mundo / worldbuilding → orquestadora `mundo` y parar.
 
 ## Cuándo NO (delegar a pilar)
 
@@ -76,3 +76,4 @@ Al leer `promesa/SKILL.md`, `progreso/SKILL.md` o `recompensa/SKILL.md` desde aq
 | `sinopsis` | Volcado `## Promesas` si el escritor confirma |
 | `guarda-analisis` | Tras informe PPR |
 | `sugerencia-capitulos` | No invocar desde PPR |
+| `mundo` | Ambientación (entrega / construcción / consistencia); no entra en foco PPR |

@@ -6,7 +6,8 @@ description: >-
   terminar chapter-editor, chapter-reader, fantasy-reader,
   recursor-escritura-creativa, promesa-progreso-recompensa, ppr-promesa,
   ppr-progreso,
-  ppr-recompensa, ppr-trama, o cuando el usuario
+  ppr-recompensa, ppr-trama, mundo, mundo-entrega, mundo-construccion,
+  mundo-consistencia, o cuando el usuario
   diga "sube el análisis", "guarda feedback en Notion", "guarda-analisis" o
   "sube todos los análisis".
 ---
@@ -86,6 +87,8 @@ Clave = texto del heading **sin fecha**. Match = `starts with` `## {clave}`.
 | PPR cap | `PPR — Cap {N}` | `<ruta>/analisis_ppr_cap{N}.md` | `Análisis — Cap {N}` |
 | PPR relato | `PPR — Relato` | `<ruta>/analisis_ppr.md` | `Análisis — Relato` |
 | trama relato | `Trama — Relato` | `<ruta>/analisis_trama.md` | `Análisis — Relato` |
+| mundo cap | `Mundo — Cap {N}` | `<ruta>/analisis_mundo_cap{N}.md` | `Análisis — Cap {N}` |
+| mundo relato | `Mundo — Relato` | `<ruta>/analisis_mundo.md` | `Análisis — Relato` |
 
 Fecha = día de la subida, `YYYY-MM-DD`.
 
@@ -107,6 +110,7 @@ Página `Análisis — Cap {N}`:
 2. `Lectura beta — Cap {N}`
 3. `Lectura aficionado — Cap {N}`
 4. `PPR — Cap {N}`
+5. `Mundo — Cap {N}`
 
 Página `Análisis — Relato`:
 
@@ -114,6 +118,7 @@ Página `Análisis — Relato`:
 2. `Lectura aficionado — Relato`
 3. `PPR — Relato`
 4. `Trama — Relato`
+5. `Mundo — Relato`
 
 Al insertar uno nuevo, colocarlo según esa lista (después del anterior existente, antes del siguiente). No reordenar el resto.
 
@@ -165,3 +170,4 @@ Tras guardar el `.md` local, las skills de análisis **ejecutan esta skill** (un
 - `recursor-escritura-creativa` (alias `promesa-progreso-recompensa`) → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `PPR — Cap {N}` o `PPR — Relato`
 - `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` → mismo padre y toggle PPR que la orquestadora (informe compartido)
 - `ppr-trama` → padre `Análisis — Relato`, toggle `Trama — Relato`
+- `mundo` / `mundo-entrega` / `mundo-construccion` / `mundo-consistencia` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `Mundo — Cap {N}` o `Mundo — Relato` (informe compartido)
