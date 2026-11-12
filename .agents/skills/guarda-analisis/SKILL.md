@@ -7,7 +7,8 @@ description: >-
   recursor-escritura-creativa, promesa-progreso-recompensa, ppr-promesa,
   ppr-progreso,
   ppr-recompensa, ppr-trama, mundo, mundo-entrega, mundo-construccion,
-  mundo-consistencia, o cuando el usuario
+  mundo-consistencia, magia-primera-ley,
+  magia-segunda-ley, magia-tercera-ley o cuando el usuario
   diga "sube el análisis", "guarda feedback en Notion", "guarda-analisis" o
   "sube todos los análisis".
 ---
@@ -89,6 +90,9 @@ Clave = texto del heading **sin fecha**. Match = `starts with` `## {clave}`.
 | trama relato | `Trama — Relato` | `<ruta>/analisis_trama.md` | `Análisis — Relato` |
 | mundo cap | `Mundo — Cap {N}` | `<ruta>/analisis_mundo_cap{N}.md` | `Análisis — Cap {N}` |
 | mundo relato | `Mundo — Relato` | `<ruta>/analisis_mundo.md` | `Análisis — Relato` |
+| magia cap | `Magia — Cap {N}` | `<ruta>/analisis_magia_cap{N}.md` | `Análisis — Cap {N}` |
+| magia relato | `Magia — Relato` | `<ruta>/analisis_magia.md` | `Análisis — Relato` |
+
 
 Fecha = día de la subida, `YYYY-MM-DD`.
 
@@ -111,6 +115,8 @@ Página `Análisis — Cap {N}`:
 3. `Lectura aficionado — Cap {N}`
 4. `PPR — Cap {N}`
 5. `Mundo — Cap {N}`
+6. `Magia — Cap {N}`
+
 
 Página `Análisis — Relato`:
 
@@ -119,6 +125,7 @@ Página `Análisis — Relato`:
 3. `PPR — Relato`
 4. `Trama — Relato`
 5. `Mundo — Relato`
+5. `Magia — Relato`
 
 Al insertar uno nuevo, colocarlo según esa lista (después del anterior existente, antes del siguiente). No reordenar el resto.
 
@@ -171,3 +178,5 @@ Tras guardar el `.md` local, las skills de análisis **ejecutan esta skill** (un
 - `ppr-promesa` / `ppr-progreso` / `ppr-recompensa` → mismo padre y toggle PPR que la orquestadora (informe compartido)
 - `ppr-trama` → padre `Análisis — Relato`, toggle `Trama — Relato`
 - `mundo` / `mundo-entrega` / `mundo-construccion` / `mundo-consistencia` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `Mundo — Cap {N}` o `Mundo — Relato` (informe compartido)
+- `leyes-magia` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `Magia — Cap {N}` o `Magia — Relato`
+- `magia-ley-cero` / `magia-primera-ley` / `magia-segunda-ley` / `magia-tercera-ley` → mismo padre y toggle Magia que la orquestadora (informe compartido)
