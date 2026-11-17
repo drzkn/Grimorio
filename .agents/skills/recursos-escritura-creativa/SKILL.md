@@ -10,7 +10,7 @@ description: >-
 
 # PPR — Orquestadora
 
-Pack del curso: esta carpeta. PPR aquí. Magia: [leyes-magia/](leyes-magia/). Mundo: [mundo/](mundo/). Personaje: [personaje/](personaje/). Caracterización en prosa: [caracterizacion/](caracterizacion/).
+Pack del curso: esta carpeta. PPR aquí. Magia: [leyes-magia/](leyes-magia/). Mundo: [mundo/](mundo/). Personaje: [personaje/](personaje/). Caracterización en prosa: [caracterizacion/](caracterizacion/). Humor, cierre y revisión de manuscrito: [humor-finales/](humor-finales/).
 
 Coordina promesa, progreso y recompensa. Reglas: [comun.md](comun.md). Marco: [teoria.md](teoria.md). Esquema y arquetipos: [construir-trama.md](construir-trama.md).
 
@@ -82,3 +82,4 @@ Al leer `promesa/SKILL.md`, `progreso/SKILL.md` o `recompensa/SKILL.md` desde aq
 | `mundo` | Ambientación (entrega / construcción / consistencia); no entra en foco PPR |
 | `personaje` | Escalas / motivación / límites (cap. personaje); no entra en foco PPR; arco → PPR |
 | `caracterizacion` | Cuatro escrituras (cap. caracterización); no entra en foco PPR |
+| `humor-finales` | Humor, finales, revisiones (cap. 9); no entra en foco PPR |

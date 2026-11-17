@@ -40,3 +40,5 @@ Sin cita, no marcar fallo.
 - [ ] Si sustitución, ¿lector guiado a desear el nuevo resultado?
 - [ ] ¿Giros amplían o recrudecen sin invalidar el tiempo del lector?
 - [ ] ¿Clímax converge tramas principales?
+
+Avalancha, gráfica de arcos, tragedia y muerte con propósito: [../humor-finales/finales/teoria.md](../humor-finales/finales/teoria.md).
