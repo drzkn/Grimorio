@@ -234,7 +234,7 @@ La orquestadora fija `foco`, `alcance`, `camino`. La skill de pilar invocada en 
 - Escribir `promesas.md`, `sinopsis.md`, `esquema.md` o Roadmap.
 - Asumir leyes sin `AskQuestion` (salvo delegado).
 - Repartir capítulos (`sugerencia-capitulos`).
-- Grillar arco de personaje (PPR). Una línea en notas si el defecto de magia coincide con el del personaje.
+- Grillar arco de personaje (PPR) ni restricciones de persona (familia `personaje`). Una línea en notas si el defecto de magia coincide con el del personaje.
 - Inventar citas o reglas no presentes en texto/plan.
 
 ## Relación con otras skills
