@@ -1,6 +1,6 @@
 # Personaje — reglas compartidas
 
-Carpeta [.agents/skills/recursor-escritura-creativa/personaje/](.). Origen: cap. «Cómo crear un personaje» (Sanderson). Usar desde la orquestadora (`SKILL.md`), `escalas/`, `motivacion/`, `limites/`. Respuesta al usuario en **español**.
+Carpeta [.agents/skills/recursos-escritura-creativa/personaje/](.). Origen: cap. «Cómo crear un personaje» (Sanderson). Usar desde la orquestadora (`SKILL.md`), `escalas/`, `motivacion/`, `limites/`. Respuesta al usuario en **español**.
 
 Al persistir `personajes.md` o informes: skill `wikilinks`.
 

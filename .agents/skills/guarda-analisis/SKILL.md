@@ -8,7 +8,9 @@ description: >-
   ppr-progreso,
   ppr-recompensa, ppr-trama, mundo, mundo-entrega, mundo-construccion,
   mundo-consistencia, personaje, personaje-escalas,
-  personaje-motivacion, personaje-limites, magia-primera-ley,
+  personaje-motivacion, personaje-limites, caracterizacion,
+  caracterizacion-dialogo, caracterizacion-descripcion, caracterizacion-accion,
+  caracterizacion-introspeccion, magia-primera-ley,
   magia-segunda-ley, magia-tercera-ley o cuando el usuario
   diga "sube el análisis", "guarda feedback en Notion", "guarda-analisis" o
   "sube todos los análisis".
@@ -93,6 +95,8 @@ Clave = texto del heading **sin fecha**. Match = `starts with` `## {clave}`.
 | mundo relato | `Mundo — Relato` | `<ruta>/analisis_mundo.md` | `Análisis — Relato` |
 | personajes cap | `Personajes — Cap {N}` | `<ruta>/analisis_personajes_cap{N}.md` | `Análisis — Cap {N}` |
 | personajes relato | `Personajes — Relato` | `<ruta>/analisis_personajes.md` | `Análisis — Relato` |
+| caracterizacion cap | `Caracterización — Cap {N}` | `<ruta>/analisis_caracterizacion_cap{N}.md` | `Análisis — Cap {N}` |
+| caracterizacion relato | `Caracterización — Relato` | `<ruta>/analisis_caracterizacion.md` | `Análisis — Relato` |
 | magia cap | `Magia — Cap {N}` | `<ruta>/analisis_magia_cap{N}.md` | `Análisis — Cap {N}` |
 | magia relato | `Magia — Relato` | `<ruta>/analisis_magia.md` | `Análisis — Relato` |
 
@@ -119,7 +123,8 @@ Página `Análisis — Cap {N}`:
 4. `PPR — Cap {N}`
 5. `Mundo — Cap {N}`
 6. `Personajes — Cap {N}`
-7. `Magia — Cap {N}`
+7. `Caracterización — Cap {N}`
+8. `Magia — Cap {N}`
 
 
 Página `Análisis — Relato`:
@@ -130,7 +135,8 @@ Página `Análisis — Relato`:
 4. `Trama — Relato`
 5. `Mundo — Relato`
 6. `Personajes — Relato`
-7. `Magia — Relato`
+7. `Caracterización — Relato`
+8. `Magia — Relato`
 
 Al insertar uno nuevo, colocarlo según esa lista (después del anterior existente, antes del siguiente). No reordenar el resto.
 
@@ -186,3 +192,4 @@ Tras guardar el `.md` local, las skills de análisis **ejecutan esta skill** (un
 - `leyes-magia` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `Magia — Cap {N}` o `Magia — Relato`
 - `magia-ley-cero` / `magia-primera-ley` / `magia-segunda-ley` / `magia-tercera-ley` → mismo padre y toggle Magia que la orquestadora (informe compartido)
 - `personaje` / `personaje-escalas` / `personaje-motivacion` / `personaje-limites` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `Personajes — Cap {N}` o `Personajes — Relato` (informe compartido)
+- `caracterizacion` / `caracterizacion-dialogo` / `caracterizacion-descripcion` / `caracterizacion-accion` / `caracterizacion-introspeccion` → mismo padre, toggle `Caracterización — Cap {N}` o `Caracterización — Relato` (informe compartido)

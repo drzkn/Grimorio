@@ -10,7 +10,7 @@ description: >-
 
 # Leyes de la magia — Orquestadora
 
-Pack del curso: carpeta padre [recursor-escritura-creativa/](../SKILL.md). PPR no entra en este foco.
+Pack del curso: carpeta padre [recursos-escritura-creativa/](../SKILL.md) (orquestadora PPR: `recursor-escritura-creativa`). PPR no entra en este foco.
 
 Coordina las cuatro leyes. Reglas: [comun.md](comun.md). Marco: [teoria.md](teoria.md).
 

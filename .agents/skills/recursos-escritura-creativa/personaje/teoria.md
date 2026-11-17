@@ -58,3 +58,4 @@ Orquestación: grill múltiple en orden **escalas → motivación → límites**
 - **PPR** — Arco y promesa de personaje; no reescribir desde aquí.
 - **leyes-magia / segunda** — Coste y límites del sistema; defecto del personaje es esta familia.
 - **mundo** — La ambientación sirve a los problemas del personaje.
+- **caracterizacion** — Diálogo, descripción, acción e introspección en página; lee `personajes.md`.

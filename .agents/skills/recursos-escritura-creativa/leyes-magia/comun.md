@@ -1,6 +1,6 @@
 # Leyes de la magia — reglas compartidas
 
-Carpeta [.agents/skills/recursor-escritura-creativa/leyes-magia/](.). Origen: cap. «Las leyes de la magia» (Sanderson). Pack del curso: carpeta padre `recursor-escritura-creativa/`. Usar desde la orquestadora (`SKILL.md`), `cero/`, `primera/`, `segunda/`, `tercera/`. Respuesta al usuario en **español**.
+Carpeta [.agents/skills/recursos-escritura-creativa/leyes-magia/](.). Origen: cap. «Las leyes de la magia» (Sanderson). Pack del curso: carpeta padre [recursos-escritura-creativa/](../). Usar desde la orquestadora (`SKILL.md`), `cero/`, `primera/`, `segunda/`, `tercera/`. Respuesta al usuario en **español**.
 
 Las cuatro leyes son **herramientas**, no normas. Si matan la historia, se descartan.
 
