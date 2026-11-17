@@ -10,7 +10,7 @@ description: >-
 
 # PPR — Orquestadora
 
-Pack del curso: esta carpeta. PPR aquí. Magia: [leyes-magia/](leyes-magia/).
+Pack del curso: esta carpeta. PPR aquí. Magia: [leyes-magia/](leyes-magia/). Personaje: [../recursor-escritura-creativa/personaje/](../recursor-escritura-creativa/personaje/).
 
 Coordina promesa, progreso y recompensa. Reglas: [comun.md](comun.md). Marco: [teoria.md](teoria.md). Esquema y arquetipos: [construir-trama.md](construir-trama.md).
 
@@ -80,3 +80,4 @@ Al leer `promesa/SKILL.md`, `progreso/SKILL.md` o `recompensa/SKILL.md` desde aq
 | `guarda-analisis` | Tras informe PPR |
 | `sugerencia-capitulos` | No invocar desde PPR |
 | `mundo` | Ambientación (entrega / construcción / consistencia); no entra en foco PPR |
+| `personaje` | Escalas / motivación / límites (cap. personaje); no entra en foco PPR; arco → PPR |

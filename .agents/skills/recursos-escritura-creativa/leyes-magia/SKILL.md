@@ -75,3 +75,4 @@ Al leer `cero/SKILL.md`, `primera/SKILL.md`, `segunda/SKILL.md` o `tercera/SKILL
 | `guarda-analisis` | Tras informe Magia |
 | `recursor-escritura-creativa` | Tras grill, solo si el escritor confirma |
 | `sugerencia-capitulos` | No invocar desde aquí |
+| `personaje` | Defecto/desventaja/limitación del personaje; no duplicar aquí |

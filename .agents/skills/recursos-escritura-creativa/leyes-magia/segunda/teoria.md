@@ -20,7 +20,7 @@ El poder («¿y si volar?») es semilla. Las restricciones cambian la historia (
 
 Rareza barata vale para tono o humor si luego **no** resuelve la trama (pregunta de las águilas).
 
-Aplica también a personajes: historias sobre defectos y límites, no solo sobre el superpoder. Si el defecto de magia coincide con el del personaje, una línea en notas; el grill de arco es PPR.
+Aplica también a personajes: historias sobre defectos y límites, no solo sobre el superpoder. Si el defecto de magia coincide con el del personaje, una línea en notas de magia; el grill de defecto/desventaja/limitación del personaje es familia `personaje` (no PPR ni esta pack).
 
 ## Checklist (grill / evaluar)
 

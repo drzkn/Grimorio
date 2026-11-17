@@ -145,4 +145,5 @@ Arcos: …
 | `recursor-escritura-creativa` | Tras esquema, grill/evaluar PPR por trama |
 | `sugerencia-capitulos` | Tras esquema, escaleta cronológica |
 | `guarda-analisis` | Tras `analisis_trama.md` |
+| `personaje` | Canon `personajes.md`; `# Personajes` aquí = ficha de autor |
 | `sinopsis` | No escribir desde aquí |

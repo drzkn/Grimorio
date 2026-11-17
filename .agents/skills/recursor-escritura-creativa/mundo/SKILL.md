@@ -75,3 +75,4 @@ Al leer `entrega/SKILL.md`, `construccion/SKILL.md` o `consistencia/SKILL.md` de
 | `sugerencia-capitulos` | No invocar desde mundo |
 | `build-context` | No invocar; `contexto.md` semilla |
 | `leyes-magia` | Sistemas de magia; no duplicar |
+| `personaje` | Escalas, motivación y límites; no grillar ficha de arco aquí |
