@@ -10,7 +10,7 @@ Cada conversación debe **servir para algo** (trama, relación, emoción, respir
 
 ## Escalas y motivo en la réplica
 
-- **Simpatía:** humor; quejica sin razón.
+- **Simpatía:** humor (caída, yuxtaposición, métodos: [../../humor-finales/humor/teoria.md](../../humor-finales/humor/teoria.md)); quejica sin razón.
 - **Resolución:** habla mucho cuando le emociona la idea; se ofrece a ayudar.
 - **Motivo:** cuela su asunto en otro tema (con riesgo de exagerar).
 - **Defecto:** repite, tonterías, calla cuando debería hablar; el arco se ve en **cómo elige hablar**.

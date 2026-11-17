@@ -10,7 +10,8 @@ description: >-
   mundo-consistencia, personaje, personaje-escalas,
   personaje-motivacion, personaje-limites, caracterizacion,
   caracterizacion-dialogo, caracterizacion-descripcion, caracterizacion-accion,
-  caracterizacion-introspeccion, magia-primera-ley,
+  caracterizacion-introspeccion, humor-finales, humor, finales,
+  revisiones, magia-primera-ley,
   magia-segunda-ley, magia-tercera-ley o cuando el usuario
   diga "sube el análisis", "guarda feedback en Notion", "guarda-analisis" o
   "sube todos los análisis".
@@ -99,6 +100,9 @@ Clave = texto del heading **sin fecha**. Match = `starts with` `## {clave}`.
 | caracterizacion relato | `Caracterización — Relato` | `<ruta>/analisis_caracterizacion.md` | `Análisis — Relato` |
 | magia cap | `Magia — Cap {N}` | `<ruta>/analisis_magia_cap{N}.md` | `Análisis — Cap {N}` |
 | magia relato | `Magia — Relato` | `<ruta>/analisis_magia.md` | `Análisis — Relato` |
+| humor-finales cap | `Humor y finales — Cap {N}` | `<ruta>/analisis_humor_finales_cap{N}.md` | `Análisis — Cap {N}` |
+| humor-finales relato | `Humor y finales — Relato` | `<ruta>/analisis_humor_finales.md` | `Análisis — Relato` |
+| revisiones relato | `Revisión — Relato` | `<ruta>/analisis_revision.md` | `Análisis — Relato` |
 
 
 Fecha = día de la subida, `YYYY-MM-DD`.
@@ -125,6 +129,7 @@ Página `Análisis — Cap {N}`:
 6. `Personajes — Cap {N}`
 7. `Caracterización — Cap {N}`
 8. `Magia — Cap {N}`
+9. `Humor y finales — Cap {N}`
 
 
 Página `Análisis — Relato`:
@@ -137,6 +142,8 @@ Página `Análisis — Relato`:
 6. `Personajes — Relato`
 7. `Caracterización — Relato`
 8. `Magia — Relato`
+9. `Humor y finales — Relato`
+10. `Revisión — Relato`
 
 Al insertar uno nuevo, colocarlo según esa lista (después del anterior existente, antes del siguiente). No reordenar el resto.
 
@@ -193,3 +200,5 @@ Tras guardar el `.md` local, las skills de análisis **ejecutan esta skill** (un
 - `magia-ley-cero` / `magia-primera-ley` / `magia-segunda-ley` / `magia-tercera-ley` → mismo padre y toggle Magia que la orquestadora (informe compartido)
 - `personaje` / `personaje-escalas` / `personaje-motivacion` / `personaje-limites` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `Personajes — Cap {N}` o `Personajes — Relato` (informe compartido)
 - `caracterizacion` / `caracterizacion-dialogo` / `caracterizacion-descripcion` / `caracterizacion-accion` / `caracterizacion-introspeccion` → mismo padre, toggle `Caracterización — Cap {N}` o `Caracterización — Relato` (informe compartido)
+- `humor-finales` / `humor` / `finales` → padre `Análisis — Cap {N}` o `Análisis — Relato`, toggle `Humor y finales — Cap {N}` o `Humor y finales — Relato` (informe compartido)
+- `revisiones` → padre `Análisis — Relato`, toggle `Revisión — Relato`
