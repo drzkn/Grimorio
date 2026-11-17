@@ -4,7 +4,7 @@ description: >-
   Orquestadora personaje (Sanderson, cap. Cómo crear un personaje): varios
   pilares o petición genérica. Delega a escalas/, motivacion/, limites/. Un solo
   foco → skill de pilar. Triggers "personajes", "construcción de personaje",
-  "caracterización", grill/evaluar varios pilares de personaje.
+  grill/evaluar varios pilares de personaje.
 ---
 
 # Personaje — Orquestadora
@@ -22,7 +22,7 @@ Skills de pilar (misma carpeta):
 ## Cuándo usar esta skill
 
 - Usuario pide **dos o tres** pilares de personaje (tras `AskQuestion` en `comun.md`).
-- Petición genérica («trabaja los personajes», «caracterización») sin skill de pilar concreta.
+- Petición genérica («trabaja los personajes», «escalas y motivo») sin skill de pilar concreta.
 - Usuario invocó un pilar y marcó **más de un** pilar en la pregunta de entrada.
 
 **No** usar para esquema de trama ni fichas largas de autor (`ppr-trama`). **No** usar para promesa/arco PPR → `recursor-escritura-creativa`. **No** usar para leyes de magia → `leyes-magia`.
@@ -77,3 +77,4 @@ Al leer `escalas/SKILL.md`, `motivacion/SKILL.md` o `limites/SKILL.md` desde aqu
 | `sugerencia-capitulos` | No invocar desde personaje |
 | `mundo` | Ambientación; no duplicar |
 | `leyes-magia` | Magia; restricciones de poder allí |
+| `caracterizacion` | Cómo se ve en prosa (`caracterizacion.md`); no quién es |

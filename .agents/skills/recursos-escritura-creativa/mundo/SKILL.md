@@ -76,3 +76,4 @@ Al leer `entrega/SKILL.md`, `construccion/SKILL.md` o `consistencia/SKILL.md` de
 | `build-context` | No invocar; `contexto.md` semilla |
 | `leyes-magia` | Sistemas de magia; no duplicar |
 | `personaje` | Escalas, motivación y límites; no grillar ficha de arco aquí |
+| `caracterizacion` | Mirada del POV; sala blanca / pirámide siguen en entrega |

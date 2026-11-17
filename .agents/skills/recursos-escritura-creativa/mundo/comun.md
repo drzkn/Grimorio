@@ -1,6 +1,6 @@
 # Mundo — reglas compartidas
 
-Carpeta [.agents/skills/recursor-escritura-creativa/mundo/](.). Origen: cap. «Cómo crear un mundo» (Sanderson). Usar desde la orquestadora (`SKILL.md`), `entrega/`, `construccion/`, `consistencia/`. Respuesta al usuario en **español**.
+Carpeta [.agents/skills/recursos-escritura-creativa/mundo/](.). Origen: cap. «Cómo crear un mundo» (Sanderson). Usar desde la orquestadora (`SKILL.md`), `entrega/`, `construccion/`, `consistencia/`. Respuesta al usuario en **español**.
 
 Al persistir `mundo.md` o informes: skill `wikilinks`.
 
